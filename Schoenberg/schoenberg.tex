@@ -1,0 +1,703 @@
+\documentclass[11pt,a4paper]{scrreprt}
+\usepackage{flupstyleutf}
+
+\usepackage[parfill]{parskip}
+
+%\usepackage{scrpage2}
+%\pagestyle{scrheadings}
+\usepackage{url}
+\usepackage{ae}
+\usepackage{microtype}
+
+\usepackage[multiple]{footmisc}
+
+\usepackage[bitstream-charter]{mathdesign}
+
+
+%%%%%%%%%%%%% Les paquetages inclus maintenant dans les style bredele: %%%%%%%%%%%%%
+%Francisation
+%\usepackage [latin1] {inputenc} 
+%\usepackage [LGR,T1] {fontenc} % Saisie fran??ais + grec
+%\usepackage [greek, frenchb] {babel}
+%\usepackage[babel]{csquotes}
+
+\usepackage{enumerate}
+\renewcommand{\bibhang}{0.5cm}
+\usepackage[colorlinks=black]{hyperref}
+\usepackage{bookmark}
+%\setlength{\parindent}{0pt} %Supprime l'indentation en dbut de paragraphe
+%\title{TRAVAIL DE RECHERCHE\\ CAPE Lecture  vue-Transposition}
+%\author{Philippe Massart}
+
+
+\begin{document}
+%--------------------------PAGE DE GARDE-------------------
+%----------------------------------------------------------------------
+%\titlepage
+%\date {26 avril 2008}
+%   %\maketitle
+%\begin{center}
+%{\LARGE \textbf{Le cours collectif de formation musicale}\\
+%\vspace*{2cm}
+%Un outil de d?©mocratie}
+%\end{center}
+%\vspace*{12cm}
+%\begin{center}
+%Philippe Massart
+%\\ Examen en vue de l'obtention du
+%\\Certificat d'Aptitude Pdagogique  l'Enseignement
+%\end{center}
+\thispagestyle{empty}
+\begin{center}
+\begin{LARGE}
+Cours de solfège de spécialisation
+\end{LARGE}
+\end{center}
+
+\begin{center}
+\begin{normalsize}
+\textbf{Travail de fin d'année - juin 1995}
+\end{normalsize}
+\end{center}
+
+\begin{center}
+\vspace{5cm}
+\noindent\rule{\textwidth}{0.5mm}
+\begin{huge}
+\textbf{Le dodécaphonisme\\à travers l'op. 23 de Schoenberg}
+\end{huge}
+\noindent\rule{\textwidth}{0.5mm}
+\end{center}
+
+
+\begin{tabular}{p{13.7cm}}
+Par~: \begin{large}\textbf{Philippe \textsc{Massart}}
+                          \end{large}
+\end{tabular}\\
+
+\begin{tabular}{p{13.7cm}}
+%\begin{center}Sous la direction de Julie \textsc{Martin}, Professeur des Universit\'{e}s
+%\end{center}
+
+%\begin{normalsize}
+%\textbf{Membres du jury~:}                            \end{normalsize}
+%\begin{normalsize}\begin{itemize}
+%\item Présidente~: Caroline \textsc{Descamps}, directrice de l'Académie de Woluwe-Saint-Pierre
+%\item Représentant de la Communauté FranÁaise~: Jean Paul \textsc{Laurent}, Inspecteur
+%\item Muriel \textsc{Deltand}, professeur de psychopédagogie au Conservatoire Royal de Mons
+%\item ??? \textsc{?}, ???
+%\item Secrétaire~: Marie-Claude \textsc{Buffenoir}, sous-directrice de l'Académie de Woluwe-Saint-Pierre
+%\end{itemize}             \end{normalsize}
+%\begin{center} 
+%\textbf{Date de l'examen~: ??/??/????} \\
+ %          \end{center}
+%\bigskip
+%\begin{flushright}
+%Document \'{e}crit avec \LaTeX
+%\end{flushright}
+\end{tabular}
+
+%------------------------------------REMERCIEMENTS------------------------
+%------------------------------------------------------------------------------
+%\clearpage
+%\thispagestyle{empty}
+\pagenumbering{roman}
+%\addcontentsline{toc}{chapter}{\numberline{}Remerciements}
+%\chapter*{Remerciements}
+%\begin{vcenterpage}
+
+
+%\paragraph{Remerciements}
+%\paragraph{}
+%Blabla\\
+%Et re-blablabla
+
+
+%\end{vcenterpage}
+%--------------------------CITATION------------------- ------------------------
+%------------------------------------------------------------------------------
+%\clearpage
+%\thispagestyle{empty}
+%\vspace*{7cm}
+%\begin{minipage}{10cm}
+%\begin{center}
+%\begin{quotation}
+%Tout est bruit pour qui a peur.%\footnote{trad}.
+%\\
+%\begin{flushright}
+%\textsc{Sophocle, \emph{Les Limiers}}
+%\end{flushright}
+%\end{quotation}
+%\end{center}
+
+%\begin{center}
+%\begin{quotation}
+%\greektext xun'on >esti psi t`o fron'eein \latintext \footnote{Penser est commun  tous.}.
+%\\
+%\begin{flushright}
+%\textsc{Hraclite, \emph{Fragments}} in \textsc{Stobe}, \emph{Anthologie}, III, 1, 179
+%\end{flushright}
+%\vspace*{3cm}
+%\greektext >anjr'wpois g'inesjai <ok'osa j'elousin o>uk >'ameinon \latintext \footnote{Pour les hommes, que se produise tout ce qu'ils souhaitent n'est pas mieux.}.
+%\\
+%\begin{flushright}
+%\textsc{Hraclite, \emph{Fragments}} in \textsc{Stobe}, \emph{Anthologie}, III, 1, 176
+%\end{flushright}
+
+%\vspace*{3cm}
+%Tout est cool, rien ne le reste.
+%\\
+%\begin{flushright}
+%\emph{Vieux proverbe phsien} \footnote{Sic!}
+%\end{flushright}
+%\end{quotation}
+%\end{center}
+%\end{minipage}
+%--------------------------INTRODUCTION------------ ------------------------
+%------------------------------------------------------------------------------
+\newpage
+\selectlanguage{french}
+\fancyfoot[CO]{\thepage}%ajouter CE si a marche pas
+\sommaire
+%\listoffigures
+\cleardoublepage
+
+
+%--------------------------------CHAP 1------------ ------------------------
+%------------------------------------------------------------------------------
+\pagenumbering{arabic}
+\chapter{Biographie d'Arnold Schoenberg}
+Le \emph{fondateur} de ce qu'on a nommé la seconde École de Vienne fut un autodidacte: il ne reçut, à vingt ans, que quelques leçons de contrepoint d'Alexandre von Zemlinsky: Schoenberg commence en effet à composer dès son enfance, mais c'est vers l'âge de vingt-cinq ans qu'il considère que ses \oe{}uvres méritent d'être publiées. Même le \emph{Quatuor à cordes en ré majeur} (1897), \oe{}uvre séduisante qui fait penser à Dvo\v{r}ák ou à Smetana, ne sera édité qu'après sa mort.
+
+Il possède un sens très élevé de ses propres responsabilités : les dons et l'intuition de l'artiste portent en eux l'obligation d'une sincérité absolue; il est de son devoir de révéler son \og{} moi \fg{} intérieur et de créer quelque chose qui ne trahisse pas les \oe{}uvres de ses prédécesseurs. Pour lui, ses premières partitions sont minées par une approche trop irrégulière de l'harmonie, approche courante à la fin du XIX\ieme{} siècle.
+
+Dans deux des premières \oe{}uvres qu'il publie, \emph{Verklärte Nacht op. 4} pour sextuor à cordes (1899) et \emph{Pelléas et Mélisande op. 5} pour orchestre (1902--1903, sur un texte de Maurice Maeterlinck), il mêle les innovations harmoniques de Wagner et de Richard Strauss à des formes travaillées en profondeur. Les deux partitions sont des poèmes symphoniques qui reposent sur des arguments littéraires conséquents. Dans le cas de \emph{Pelléas}, qui reprend l'histoire de l'opéra, presque contemporain, de Debussy, la musique adopte la forme d'une symphonie en un mouvement, riche en relations thématiques et en développements contrapuntiques, provenant autant de Brahms que de Reger et de Strauss.
+
+À partir de cette époque, le style de Schoenberg se développe rapidement. Son \emph{Quatuor à cordes n\up{o} 1 op. 7} (1904--1905) et la \emph{Symphonie de chambre n\up{o} 1 op. 9} (1906) réalisent la fusion de quatre mouvement symphoniques en un ensemble continu et tentent de laisser s'exprimer une harmonie plus chromatique au moyen d'un travail sur les motifs et sur la polyphonie.
+
+Ce procédé ne peut pas durer indéfiniment et, en 1908, Schoenberg s'engage dans la voie de l'atonalité: il y a sans doute été poussé par ses deux nouveaux élèves, Alban Berg et Anton Webern; mais il importe toutefois de noter qu'il fonde rarement son enseignement sur ses nouvelles idées en matière de composition, ce qui montre son attachement à la musique \og{} traditionnelle \fg{} (Brahms, notamment). Pour lui, l'enseignement est autant une vocation que la composition, même si c'est parfois une nécessité financière; comme la composition, il comporte parfois de lourdes responsabilités : apporter à l'élève une solide connaissance de son héritage musical et l'aider à découvrir sa propre personnalité.
+
+C'est cette recherche intérieure, appliquée à lui-même, qui mène Schoenberg à l'atonalité. Ses premières \oe{}uvres atonales, particulièrement les \emph{Cinq pièces pour orchestre op. 16} (1909) et le monodrame \emph{Erwartung op. 17} (1909) font appel à une variété inouïe d'harmonies, de rythmes et de couleurs et atteignent un niveau d'émotion intense qui justifie le terme \og{} expressionniste \fg{}. \emph{Erwartung}, par exemple, est un opéra en un acte à un personnage (soprano) qui explore les sensations les plus profondes de la terreur, du regret et de l'espoir ressenties par une femme allant dans une forêt à la recherche de l'amant qui l'a abandonnée.
+
+Quand un \emph{Pierrot Lunaire op. 21} (1912, sur des poèmes d'Albert Giraud traduits en allemand par E. O. Hartleben), avec l'importance du récit théâtral et le petit ensemble instrumental qui en font l'une des \oe{}uvres les plus accessibles de Schoenberg, il habite un monde nocturne, morbide et ironique, dont le caractère étrange est accentué par l'utilisation du \emph{sprechgesang}, sorte d'émission vocale qui se situe entre la parole et le chant.
+
+La dimension introspective de ces \oe{}uvres n'aurait jamais atteint un tel degré sans l'atonalité, mais on aurait tort de supposer que l'atonalité implique nécessairement une expression torturée. Dans de nombreux lieder et pièces pour piano atonales de Schoenberg, les éléments de tonalité deviennent exceptionnels; son \oe{}uvre la plus ambitieuse de cette époque est un oratorio, \emph{Die Jacobsleiter} (L'échelle de Jacob, 1917), qui traite du thème de la constance morale comme d'un chemin inévitablement semé d'embûches pour parvenir à la perfection de l'âme. Schoenberg en a interrompu la composition lorsqu'il a été mobilisé dans l'armée autrichienne pendant la Première Guerre mondiale; et comme de nombreux autres projets, il ne l'a jamais mené à terme.
+
+Au cours des années suivantes, Schoenberg élabore la technique des composition sérielle afin de prévenir l'anarchie menaçante de l'atonalité. Depuis 1908, l'absence de tout cadre harmonique cohérent l'empêche d'écrire une musique entièrement développée; ses \oe{}uvres atonales sont courtes --- notamment les \emph{Six pièces pour piano op. 19} de 1911 --- ou reposent sur un texte qui lui assure une certaine continuité. Avec le sérialisme, il peut retourner aux formes thématiques de l'ancienne manière, comme dans la \emph{Suite pour piano op. 25} (1921--23), qui se réfère aux suites pour clavier de la musique baroque, ou dans le \emph{Quintette à vent op. 26} (1923--1924) qui comporte les quatre mouvements habituels de la musique de chambre classique.
+
+Les possibilités de cette nouvelle technique s'étendent dans une succession de partitions abstraites majeures: les \emph{Variations pour orchestre op. 31} (1926--1928), les \emph{Quatuor à cordes n\up{o} 3 et 4} (op. 30, 1927; op. 37, 1936), les \emph{Concertos pour violon op. 36} (1935--36) et \emph{pour piano op. 42} (1942). Dans ces \oe{}uvres, Schoenberg parvient, avec davantage de souplesse, à retrouver dans une écriture sérielle certains procédés de modulation et de développement qui ont servi de base aux formes classiques de la musique tonale. Bien qu'il évolue au sein de la tradition classique sans se limiter à ses aspects formels, comme Stravinsky ou Poulenc, Schoenberg s'approche ici du néoclassicisme; la rigueur de ses \oe{}uvres sérielles contraste singulièrement avec l'inspiration et la technique extravagantes de la musique atonale.
+
+On comprend aisément pourquoi Schoenberg éprouvait certaines difficultés à laisser jouer sans réserve des \oe{}uvres comme les \emph{Cinq pièces pour orchestre op. 16}. Il n'est pas impossible qu'il ait ressenti le besoin de rétablir le contact avec le public qui avait violemment rejeté ses \oe{}uvres atonales. Il revient donc aux vieux moules classiques et cherche à trouver des modes d'expression plus légers. Parmi ses premières partitions sérielles figurent deux pièces dans le style du \emph{divertimento}, la \emph{Sérénade op. 24} (1920--1923, pas entièrement sérielle) et la \emph{Suite op. 29} pour sept instruments (clarinette, clarinette en mi \fetaflat{}, clarinette basse, violon, alto, violoncelle et piano, 1924--1926) ainsi que l'opéra-comique \emph{Von heute auf morgen} (Du jour au lendemain, 1928--1929).
+
+Il se tourne à nouveau vers un sujet religieux dans son opéra \emph{Moses und Aaron} (Moïse et Aaron, 1930--32): comment communiquer une vision de Dieu ? Moïse, le prophète n'en a pas le moyen alors qu'Aaron peut transmettre le message, mais seulement grâce au compromis et au subterfuge, notamment lorsqu'il adopte une attitude complaisante face à la construction du veau d'or. C'est le problème personnel de Schoenberg qui est posé dans cet ouvrage: comment exprimer sa vision avec une intégrité parfaite ? Il restera d'ailleurs inachevé.
+
+En 1933, à l'arrivée des nazis au pouvoir, Schoenberg quitte le poste d'enseignant qu'il occupait depuis 1926 à la Prussiche Akademie der Künste de Berlin et revient au judaïsme (il s'était converti au protestantisme à l'âge de dix-huit ans). Ce retour à la foi de sa naissance s'était déjà manifesté dans \emph{Moïse et Aaron} et dans d'autres \oe{}uvres. Il émigre aux États-Unis où il accepte un poste de professeur à l'Université de Californie à Los Angeles; il y passera la fin de sa vie. Au cours de ces années américaines, il revient de façon intermittente à la composition tonale, comme dans \emph{Thème et variations op. 43} pour orchestre d'harmonie en sol mineur (1943). Il réussit également à rapprocher sérialisme et tonalité dans l'\emph{Ode à Napoléon op. 41} pour voix parlée, quatuor à cordes et piano (1942), qui transpose envers Hitler la rancune de Byron à l'égard de Napoléon. \emph{A survivor from Warsaw op. 46} (Un survivant de Varsovie, 1947) pour récitant, ch\oe{}ur d'hommes et orchestre constitue une autre réponse passionnée aux événements de l'époque.
+
+Toutefois, la pensée de Schoenberg devient de plus en plus introvertie. Le \emph{Trio à cordes op. 45} (1946) et la \emph{Fantaisie op. 47} pour violon et piano (1949) marquent un retour à la nervosité farouche de la période atonale et son dernier projet consiste à mettre en musique ses \emph{Psaumes modernes} sur la recherche de Dieu. Il n'en écrira qu'un seul (le \emph{Psaume 130 op. 50b}, 1950), qui restera inachevé s'arrêtant fort à propos sur ces mots: \og{} Et je prie encore \fg{}.
+
+
+\chapter{L'\oe{}uvre pianistique}
+Si le piano n'occupe pas quantitativement une place dominante dans la production schoenbergienne, il présente toutefois l'inestimable intérêt de se situer à des moments cruciaux de son évolution. Citons le pianiste Glenn Gould :
+\begin{quote}
+\emph{Il est possible de retracer jusqu'à un certain point l'évolution des idées stylistiques de Schoenberg à travers son écriture pour le piano\ldots On en arrive, par cette démarche, à la conclusion que, au fur et à mesure que se succèdent ses \oe{}uvres, le piano \emph{en soi} a pour Schoenberg de moins en moins de signification. Mais [\ldots{}] il serait erroné de supposer que Schoenberg était indifférent à la mécanique de l'instrument. Il n'y a pas une seule phrase de toute sa musique pour piano qui soit mal conçue pour le clavier.}
+\end{quote}
+
+De plus, les \oe{}uvres pour piano de Schoenberg se placent presque toutes à des moments décisifs de sa recherche : l'opus 11 (1909) est l'un des premiers chefs-d'\oe{}uvre de la \og{} libre atonalité \fg{}, l'opus 19 (1911) présente une extrême concision dont héritera Webern, les opus 23 et 25 furent composés pendant les années d'élaboration de la méthode dodécaphonique, dont ils contiennent les premiers exemples, et les opus 33a et 33b sont représentatifs de la maturité du dodécaphonisme.
+
+Schoenberg utilisa donc le piano comme instrument \og{} expérimental \fg{}, mais on ne saurait dire pour autant qu'il ne s'en servit que pour des raisons de commodité, en négligeant totalement la qualité du son pianistique. Pierre Boulez mit en évidence les liens qui existaient entre l'écriture pianistique de Schoenberg et celle de Brahms et, bien avant lui, Busoni avait écrit à Schoenberg, au sujet de l'opus 11 :
+\begin{quote}
+\emph{La manière d'exprimer est nouvelle, pas l'écriture pianistique, qui est seulement plus pauvre.}\footcite{szendy2001}
+\end{quote}
+Ce qui échappait toutefois à Busoni, outre la cohérence dans l'innovation, c'était la signification de cette \og{} pauvreté \fg{}, placée sous le signe d'une totale intériorisation du discours musical.
+
+\section{Drei Klavierstücke op. 11}
+Le premier recueil digne d'attention est celui des trois \emph{Klavierstücke op. 11} daté de 1909. L'année 1909 est à marquer d'une pierre blanche dans la carrière du musicien qui, outre cet opus 11, achève alors son cycle de mélodies du \emph{Livre des jardins suspendus}, et compose les \emph{Cinq pièces pour orchestre op. 16} ainsi que le monodrame \emph{Erwartung}. Nous sommes donc au seuil d'une période importante: celle de l'exploration de la totalité chromatique qui conduit à l'atonalité. À cet égard, l'opus 11 est marqué d'un caractère d'expérimentation qui prolonge immédiatement celle entreprise dans les \emph{Jardins suspendus}. Schoenberg, certes, ne franchit pas l'étape d'une enjambée: par maints détails d'écriture se discerne encore l'emprise du Brahms tardif, avec l'assise profonde de ses basses et tous ses effets de syncopes (Brahms utilisait également le piano comme laboratoire d'expériences rythmiques, comme par exemple dans le \emph{Klavierstücke op. 76 n\up{o} 5}). Mais Schoenberg réussit à se forger un langage très personnel qui tranparaît moins dans les similitudes stylistiques qu'offrent les trois pièces de l'opus 11 que dans leurs différences.
+
+\section{Sechs kleine Klavierstücke op. 19}
+Écrites deux ans plus tard, ces \og{} miniatures \fg{} forment contraste avec l'opus 11, non seulement par leur durée --- l'ensemble ne dépasse pas cinq minutes ---, mais par leur style concis: elles se situent dans le prolongement des \emph{Trois petites pièces pour orchestre de chambre} (1910), concentrant les événements musicaux dans un minimum de temps, avec un minimum de moyens. On notera que la dernière pièce fut écrite peu après les obsèques de Gustav Mahler en 1911, à la mémoire duquel il dédiera son \emph{Traité d'harmonie} publié deux mois plus tard.
+
+L'opus 19 est une des \oe{}uvres-clé de l'évolution schoenbergienne. Ce qui frappe le plus dans ces six pièces, c'est leur concision: la plus longue (la première) ne comporte que dix-huit mesures, deux autres (les plus brèves), neuf seulement. Chacun de ces aphorismes hyper-condensés présente un caractère musical nettement profilé, précisé par des indications telles que \og{} Lent, tendre \fg{}, \og{} Lent \fg{}, \og{} Les noires très lentes \fg{}, \og{} Vite mais léger \fg{}, \og{} Un peu vite \fg{}, \og{} Très lent \fg{}. L'harmonie utilise des accords allant jusqu'à six sons (accords conclusifs des deuxième, cinquième et sixième morceaux).
+
+L'écriture à deux et trois voix prédomine: mais des passages monodiques accompagnés d'accords s'y trouvent aussi, notamment dans la quatrième pièce qui est essentiellement écrite de cette façon. La deuxième est caractérisée par une mélodie tournant autour de la tierce ascendante sol -- si, traité en ostinato. Dans la troisième, la basse expose \fetap{}\fetap{} un large thème en octave, chose curieuse car, dans ses \oe{}uvres de cette époque, Schoenberg évite généralement les doublures de ce genre. Toute reprise de thème ou de motif est également évitée (mise en application du principe de la \emph{variation perpétuelle}\label{var_perp} sur lequel nous reviendrons plus tard), à l'exception toutefois de la quatrième pièce où, juste avant la fin, on rencontre une variation raccourcie du thème initial. La dernière pièce ne fait que paraphraser, très brièvement, deux accords qui finiront par s'unir en un seul accord de six sons:
+
+\begin{center}
+\begin{lilypond}
+\version "2.14"
+
+\score{
+  \new PianoStaff {
+    <<
+      \new Staff {
+        \relative {
+        \partial 4 <a' fis' b>4 ~ q1
+              }}
+      \new Staff {
+        \clef "bass"
+        \relative {
+       s4 r2 <g c f!>2
+        }
+      }
+    >> 
+  }
+}
+
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+Ce morceau est abondamment muni d'indications d'intensités allant du \fetap{} au \fetap{}\fetap{}\fetap{}\fetap{}. Le style de cet ouvrage a provoqué l'écho le plus intense dans la musique d'Anton Webern, qui est reconnu pour la concision de ses \oe{}uvres.
+
+\section{Fünf Klavierstücke op. 23}
+Nous reviendrons ultérieurement sur ce recueil.
+
+\section{Suite pour piano op. 25}
+L'\oe{}uvre est exactement contemporaine des \emph{Cinq pièces op. 23}. Mais à l'inverse de l'opus 23, il s'agit là de la première partition intégralement dodécaphonique de Schoenberg; c'est dire quelle est l'importance historique de l'opus 25.
+
+On remarque que la série comporte un \og{} hommage \fg{} à Bach (les quatre derniers sons en notation allemande), musicien auquel Schoenberg emprunte délibérément le schéma formel de la suite instrumentale (succession de danses en nombre variable):
+
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       e'1 f g, des' ges, es aes d,\[ b'^\markup{H} c^\markup{C} a^\markup{A} bes^\markup{B}\]
+              }}
+  }
+
+
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+La série est d'abord présente à la main droite, accompagnée à la main gauche par une variante rythmique transposée au triton (le triton ré \fetaflat{} -- sol forme un intervalle qui reparaîtra plusieurs fois au cours de la \emph{Suite}).
+
+C'est ici qu'intervient, dans un état encore primitif, un aspect de la musique sérielle chez Schoenberg: l'utilisation de divers procédés à l'intérieur de la série. Dans l'opus 25, on peut diviser la série en trois groupes de quatre sons; les deux derniers sons des deux premières parties forment deux tritons (sol -- ré \fetaflat{} et la \fetaflat{} -- ré); en outre, lorsqu'on observe le renversement de cette série, on observe que le triton sol -- ré \fetaflat{} devient ré \fetaflat{} -- sol.
+
+Cette forme (suite de danses) lui valut d'être affublée de l'étiquette \og{} néoclassicisme sériel \fg{}. Il semble plutôt que Schoenberg s'y soit beaucoup diverti, la discipline des formes anciennes lui permettant d'éprouver la richesse d'un langage tout nouvellement inventé.
+
+La première pièce est intitulée \emph{Präludium} (Prélude), dans un mouvement vif de toccata. Lui succède une \emph{Gavotte et Musette} (dans celle-ci, l'intervalle de triton se substitue à la quinte juste ordinairement émise par l'instrument du même nom). Vient ensuite l'\emph{Intermezzo} (l'allusion à Brahms n'est probablement pas innocente), qui semble appartenir à un autre univers que les danses qui l'entourent; la triton persiste en ostinato. Les deux dernières pièces sont respectivement un \emph{Menuet et Trio} (ce dernier en traitement canonique) puis une \emph{Gigue} qui conclut abruptement.
+
+
+\section{Deux pièces pour piano op. 33a et 33b }
+Sous un numéro d'opus commun, ce sont là les dernières partitions pour piano seul de Schoenberg: la première pièce date des années 1928--1929, époque des \emph{Variations pour orchestre op. 31} et de la \emph{Musique d'accompagnement pour une scène de film}. La seconde est de 1931, alors que Schoenberg commençait la composition de son ouvrage lyrique le plus ambitieux, \emph{Moïse et Aaron}. Chacune représente une sorte de synthèse de toute ce qu'écrivit le compositeur pour le piano. Cependant, tout est différent entre elles, qu'il s'agisse des séries de base, de l'allure générale, des matériaux mélodiques et harmoniques, ou même de l'écriture pianistique.
+\subsection{Op. 33a}
+Quoique de dimensions réduites, c'est certainement une des pages importantes du musicien dans sa période de création dodécaphonique. Bien qu'indiquée \emph{mässig} (modéré), elle est d'un tempo rapide. Les trois premiers accords sont fondés sur la série initiale si \fetaflat{}, fa, si, do, la, fa \fetasharp{}, do \fetasharp{}, ré \fetasharp{}, sol la \fetaflat{}, ré et mi. Les trois accords suivants proposent les notes de la récurrence du renversement, transposée à la quarte. Schoenberg obtient ainsi des agrégats sonores. Ce thème de départ se coule dans la forme--sonate --- ici fortement compressée ---, avec un thème secondaire, une développement extrêmement dense, puis la reprise variée du thème principal dont se dégage, en un raccourci inattendu, la ligne mélodique. Pour terminer, une brève conclusion pleine de force.
+
+\subsection{Op. 33b}
+Non moins représentative du dodécaphonisme sériel, la seconde pièce est plus lente, beaucoup plus développée, d'une grande richesse polyphonique, et de construction strophique (AB -- A'B' -- coda). Elle comporte donc également deux thèmes, le premier distingué par ses grands intervalles disjoints, le second par un diatonisme plus resserré. On sera frappé par une extrême amplitude mélodique (écriture horizontale) que contrepointe un rythme indiqué \emph{molto staccato}. On ne sera pas moins étonné par le caractère d'introspection et, somme toute, d'épanouissement que semble revêtir cette opus 33b, sans aucune doute l'une des plus grandes réussites du piano schoenbergien.
+
+\chapter{Le dodécaphonisme}
+Le dodécaphonisme est une technique de composition dans laquelle les douze notes (en grec, \greektext d\'wdeka\latintext{}: douze) de la gamme chromatique sont disposés dans un ordre fixe, la \og{} série \fg{}, qui peut-être utilisée pour former des mélodies ou des harmonies et qui reste en général identique pour la totalité d'une \oe{}uvre. La série
+est ainsi une sorte de thème caché: elle n'a pas besoin d'être présentée comme un thème (bien qu'évidemment elle puisse l'être), mais elle constitue un réservoir d'idées et une référence de base. Le terme \emph{dodécaphonisme} a été utilisé pour la première fois par René Leibowitz. Mais voyons d'abord comment est né le dodécaphonisme.
+
+Dans le chromatisme mélodique et harmonique exempt de tonalité tel qu'on le trouve déjà chez Max Reger et Claude Debussy, on voit percer une tendance spontanée à éviter les répétitions de sons, ou du moins à n'en user que rarement. Cette aversion se rencontre également dans la musique tonale et modale. Toute technique de composition connaît de tels interdits, inspirés par le souci de ne rompre à aucun prix un certain équilibre, senti comme essentiel. Rien de plus aisé, dans un langage musical qui va du diatonisme à sept intervalles jusqu'au chromatisme à douze sons de la gamme chromatique, que de discerner où m!ne le refus des répétitions.
+
+Au terme de l'évolution, on aboutit à cette forme mélodique dans laquelle les douze demi-tons se présentent tous en même temps, et cela en une seule fois. Dans la sphère de Schoenberg, de telles combinaisons trouvent déjà un emploi occasionnel dans certaines \oe{}uvres de tonalité élargie. Des mélodies et enchaînements de douze sons avaient déjà vu le jour. Toutefois, ils faisaient alors partie intégrante de la trame tonale. Or c'est précisément ce contexte tonal qui disparaît chez les membres de la nouvelle école viennoise. Ils n'y ont plus figure d'exceptions mais deviennent la quintessence d'un nouveau système, non encore régi par des lois.
+
+En ce sens, on peut soutenir que le compositeur Josef Matthias Hauer a devancé Schoenberg et ses élèves en écrivant des mélodies \og{} purement atonales \fg{}. Les premières d'entre elles appartiennent à des \emph{Pièces pour piano} de 1914. On a déjà affaire ici à des formes achevées, fondées sur de telles mélodies atonales. Mais Hauer définit lui-même le caractère de ces pièces dans un traité de musique atonale paru en 1920 sous le titre \emph{Von Wesen des Musikalischen} 'De l'essence du fait musical).
+
+Les conceptions du compositeur viennois reposent sur le tempérament égal, c'est-à-dire sur un chromatisme d'où on a éliminé par voie mathématique la tendance à faire dominer un ton fondamental. Et Hauer de définir en ces termes la musique vers laquelle il tend :
+\begin{quote}
+\emph{Dans la musique atonale, cependant, issue qu'elle est de la tonalité, les intervalles sont seuls à jouer un rôle, à l'exclusion de tout autre élément. Le caractère musical ne s'y exprime plus par le biais des modes majeur et mineur, ni d'instruments caractéristiques (donc d'une couleur), mais grâce précisément à la \emph{totalité} des intervalles et coloris de timbres, qui prend toute sa valeur seulement sur un instrument réglé en tempérament égal.}
+\end{quote}
+
+Poursuivant, Hauer déclare encore:
+\begin{quote}
+\emph{Sa loi, son nomos, consiste en ceci qu'on joue et rejoue inlassablement \emph{tous} les douze sons du tempérament.}
+\end{quote}
+Cette universalité de la phrase musicale de douze sons, Hauer l'a requise et pratiquée antérieurement à l'école de Schoenberg: sa priorité ne fait aucun doute.
+
+Schoenberg fut cependant le premier à sentir le péril inclus dans la liberté totale qu'il avait inaugurée lui-même. La tentative qu'il fit d'introduire le nouveau langage atonal dans les formes traditionnelles aboutit, dans \emph{Pierrot lunaire}, en 1912, à des résultats aussi géniaux que paradoxaux: qu'on songe ici à la passacaille \emph{Nacht}, ou aux fugues et au canon à l'écrevisse de \emph{Mondfleck}: bien qu'il bénéficie d'une plus grande liberté de man\oe{}uvre d'un point de vue compositionnel, il ressent le besoin de rester attaché à certaines techniques traditionnelles, telle la fugue, etc. Au cours de la première guerre mondiale, Schoenberg s'est borné à publier quatre \emph{Lieder pour orchestre op. 22}, qui sont de forme libre.
+
+Il travailla néanmoins à une série de compositions, qui demeurèrent à l'état d'ébauches, ou ne furent jamais menées à terme. Au nombre de ces essais figure la \emph{Symphonie inachevée} qu'il mentionne dans une lettre du 3 juin 1937 à Nicolas Slonimsky: il y indique que le scherzo de cette symphonie, esquissée au tournant des années 1914--1915, est fondé sur un thème de douze sons. D'ailleurs, ajoute-t-il, cela ne l'a pas empêché d'en utiliser d'autres dans le reste de l'\oe{}uvre. L'oratorio \emph{L'échelle de Jacob}, qui se rattache par sa date à l'élaboration de cette symphonie, comprend d'autre part deux thèmes à six sons dont la réunion forme une série dodécaphonique.
+
+Schoenberg définit ainsi sa méthode :
+\begin{quote}
+\emph{méthode de composition avez douze sons n'ayant de relation que l'un par rapport à l'autre}
+\end{quote}
+Toute \oe{}uvre composée de la sorte repose sur une série, ou figure de base, dans laquelle les douze sons se succèdent suivant un ordre déterminé et inaltérable. Telle est la mesure dans laquelle ce système répond à la \emph{méthode purement atonale} de Hauer. À la différence toutefois de cette dernière, qui combine librement entre elles des mélodies hétéroclites, Schoenberg assigne à l'\oe{}uvre la série pour matériel unique et en fait donc la substance même.
+
+Schoenberg explicite aussi un des éléments dominants de toute son \oe{}uvre: le principe de la variation perpétuelle; ses mélodies rejettent la loi de symétrie évoquée plus haut  (voir \ref{var_perp}), les liaisons entre les différentes parties d'une \oe{}uvre se limitent aux motifs et aux accords. La musique se voit alors imposer un état de variation permanente:
+\begin{quote}
+\emph{Chacune de mes idées musicales essentielles n'est énoncée qu'une seule fois; autrement dit, je me répète peu ou pas du tout. C'est la variation qui se substitue presque totalement chez moi à la répétition (on ne trouvera que bien rarement une exception à cette règle).}
+
+\emph{Par \og{} varier \fg{}, j'entends le fait de modifier un élément quelconque de ce que j'ai déjà énoncé, comme par exemple d'en développer davantage les cellules élémentaires ou les dessins qui en découlent. J'obtiens ainsi quelque chose de toujours nouveau d'une façon ou d'une autre. Comme le degré de parenté avec l'élément initial est apparemment assez lâche, l'auditeur a parfois quelque difficulté à retrouver le lien entre le texte primitif et sa variation.}
+
+\emph{Non seulement l'auditeur se trouve face à de nouveaux épisodes, plus ou moins développés, enchaînés les uns aux autres ou simplement juxtaposés ou successifs, tout ceci avec la plus grande variété, mais encore il lui est presque impossible de bien saisir tous ces types de combinaisons s'il n'est pas doué d'un esprit logique et d'un sens aigu de la forme.}
+\end{quote}
+
+Dans le dodécaphonisme sériel, le travail de la phrase consiste en ceci que la figure fondamentale se réfléchit comme dans un miroir et cela de trois manières différentes: soit rétrograde (forme récurrente), ou avec tendance à l'inversion de chaque intervalle (renversement ou miroir proprement dit), et enfin la combinaison de ces deux réflexions. De la sorte, le nombre de figures dodécaphoniques s'élève à quatre. Transposée, chacune d'elles peut apparaître à douze niveaux différents. Le compositeur a donc à sa disposition quarante-huit formes de la série. Or, à l'intérieur de celle-ci, il est également loisible de remplacer les intervalles par leurs complémentaires à l'octave: la quinte, par exemple, sera substituée à la quarte, ou la septième majeure au demi-ton. La possibilité s'offre enfin d'obtenir de plus grands intervalles encore par l'addition d'une ou plusieurs octaves. Elle peut être manipulée de diverses façons dans une composition: les notes individuelles de la série peuvent être présentées à n'importe quelle octave; la série entière peut être uniformément transposée d'un intervalle donné; elle peut être inversée, renversée ou les deux simultanément.
+
+Voici à titre d'exemple la série de l'op. 23 n\up{o} 5:
+
+Forme originale :
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       cis1 a' g b aes ges bes d e es c f,
+              }}
+  }
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+Récurrence:
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+      f1 c' es e d bes ges aes g b a cis,
+              }}
+  }
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+Renversement:
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       cis'1 f, es g fis gis e' c bes b d a
+              }}
+  }
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+Récurrence du renversement:
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       a'1 d b bes c e gis, fis g es f cis 
+              }}
+  }
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+Ces moyens donnent au compositeur un éventail complet des différentes formes que peut revêtir la série, toutes liées par la même séquence d'intervalles, et il peut utiliser ces formes à volonté. Les thèmes ne doivent pas nécessairement contenir les douze notes, ni la série être utilisée sous forme de mélodie; elle peut être employée pour construire à la fois un thème et son accompagnement; mais le compositeur peut aussi combiner plusieurs formes de la série dans une suite d'accords ou une séquence polyphonique :
+\begin{quote}
+\emph{Dans la composition avec douze sons, on évite autant que possible les consonances (accords parfaits majeurs et mineurs) et aussi les dissonances les plus simples (accords de quinte diminuée et accords de septième), autrement dit tout ce qui a constitué jusqu'ici le flux et le reflux de l'harmonie[\ldots{}] L'assertion primordiale sur laquelle s'appuie la composition avec douze sons est la suivante.
+Toute entité dans laquelle les sons se font entendre simultanément (harmonie, accord, écriture à plusieurs parties) joue exactement le même rôle dans la présentation d'une idée musicale que toute entité dans laquelle les sons se font entendre successivement (motif, ligne, thème, mélodie etc.); elle est soumise à la même loi d'intelligibilité.}\footcite{schoenberg1971}
+\end{quote}
+Les possibilités sont donc très vastes, mais le principe sériel peut constituer une garantie de cohérence harmonique, car le schéma fondamental des intervalles reste le même. Cette cohérence n'est pas nécessairement contrecarrée par le fait que, dans la majorité des cas, le fonctionnement du sérialisme dans une \oe{}uvre musicale n'est pas perceptible à l'oreille, ni destiné à l'être.
+
+Il est à noter cependant que certaines \oe{}uvres sont basées sur des séries de moins de douze sons (par exemple les quatre premières pièces de l'opus 23); mais il s'agit là d'ébauches uniquement destinées à la mise en place de la technique dodécaphonique.
+
+Les \oe{}uvres de ce genre peuvent servir au détracteurs de la musique sérielle qui lui reproche,t d'être quelque peu mathématique ou mécanique, mais en l'occurrence, l'effet recherché est une homogénéité très naturelle entre le caractère harmonique et la forme mélodique. En fait, les règles de case du sérialisme sont, à bien des égards, moins restrictives que celles de l'harmonie diatonique ou de la composition fuguée: elles n'imposent aucune sorte d'uniformité stylistique. Voici à ce propos l'avis de Schoenberg:
+\begin{quote}
+\emph{Dans la composition traditionnelle, l'ordre cohérent est assuré par l'existence permanente d'un certain nombre de points de référence tonaux. Dans la composition avec douze sons, l'ordre résulte de ce que l'unité de chaque morceau dérive des relations tonales qui existent entre les éléments d'une série fondamentale de douze sons: l'assise est ainsi cohérente, du fait qu'il y a une constante référence à cette série fondamentale}.\footcite{schoenberg1971}
+\end{quote}
+
+\chapter{Fünf Klavierstücke op. 23}
+Après avoir composé les \emph{Quatre Lieder pour orchestre op. 22} (1913--1915), Schoenberg entre dans le silence pour sept ans, silence dont il sortira en 1922 en faisant connaître le fruit de ses travaux théoriques, la \emph{méthode de composition avec douze sons n'ayant de relation que l'un par rapport à l'autre}. C'est la fin de l'atonalité libre, l'avènement de la méthode sérielle. Il publia ainsi les \emph{Fünf Klavierstücke op. 23}, dont la cinquième pièce est fondée sur la série de douze sons en un emploi encore assez simpliste.
+\begin{quote}
+\emph{J'ai toujours eu la préoccupation d'échafauder \emph{consciemment} la charpente de ma musique sur une conception centrale, autour de laquelle gravitaient toutes les autres idées, et qui régissaient leur accompagnement ainsi que les accords ou, si l'on préfère les \og{} harmonies \fg{}. J'ai fait de nombreuses tentatives en ce sens, mais fort peu de choses a été mené à bien, ou publié.}
+\end{quote}
+Parmi ces essais, Schoenberg cite notamment les \emph{Klavierstücke op. 23}.
+
+Les \emph{Cinq pièces pour piano op. 23} sont toutes très différentes, tant sur le plan de la forme que sur celui de la technique employée. La première est une invention à trois voix; la deuxième, une forme-sonate avec développement; cela dit, considérées de plus haut, ces deux pièces sont en réalité des variations. Dans la troisième pièce, il n'y a pour ainsi dire pas un son qui ne fasse, en même temps, partie de plusieurs perspectives de la série originale et qui ne puisse, de ce fait, être expliquée de différentes manières.
+
+On peut sans doute considérer aujourd'hui l'opus 23 comme l'apogée de l'\oe{}uvre pianistique de Schoenberg. La rigueur et la concision de la construction, fondée sur la soumission du motif sonore à un principe unificateur (la série) et sur l'extension des principes du développement et de la variation des motifs (le principe de la variation perpétuelle), n'entraînent aucune rupture avec les principes expressifs, l'intensité, les violents déchirements des \oe{}uvres précédentes: ces pages, dans leur fascinante liberté d'invention, s'imposent parmi les plus audacieuses de Schoenberg.
+
+\begin{quote}
+\emph{La méthode de composer avec douze sons a eu beaucoup de tentatives préparatoires [\ldots{}] Comme exemple de ces essais, je puis mentionner les \emph{Pièces pour piano op. 23}. Ici j'étais arrivé à la technique que j'intitulais \og{} composer avec des sons \fg{}, terme très vague mais qui avait un sens pour moi. À savoir: à l'inverse de la manière courante de se servir d'un motif, je m'en servais déjà presque comme d'une série de douze sons fondamentale. Je construisais d'autre motifs et thèmes en partant de cette série, et aussi des accompagnements et autres accords, mais le thème ne comportait pas les douze sons\ldots}
+\end{quote}
+Pas encore certes dans cet opus 23, entrepris dès 1920 mais qui ne fut achevé qu'en avril 1923. Cependant, la cinquième pièce --- \emph{Walzer} --- fut la première pièce intégralement \emph{à douze sons} publiée, en novembre de la même année. Alors que les quatre premières pièces sont encore des préliminaires, fort avancés, au principe de la sérialisation (séries comptant moins de douze sons), la \emph{Valse} conclusive en constitue l'application sans compromis.
+
+Nous analyserons succinctement les pièces de l'opus 23 dans le cadre des deux techniques de composition qui caractérisent ce recueil: la mise en place de la technique sérielle (avec douze sons ou moins) et le principe de variation perpétuelle.
+
+1. \emph{Sehr langsam} (très lent): le début de cette pièce (jusqu'à la mesure 12) est conçu comme une invention à trois voix. Trois éléments thématiques se retrouvent tout au long de la pièce:
+\begin{itemize}
+\item la thème principal:
+
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       fis1 es d f dis e g
+              }}
+  }
+
+
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+\item le motif BACH, dans sa forme originale ou transposée
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       bes'1 a c b
+              }}
+  }
+
+
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+\item un motif en doubles croches composé d'une tierce majeure et d'une septième majeure, que l'on retrouvera transposé ou présenté sous sa forme récurrente:
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       \clef "bass" <g b>16[ <d cis'>]
+              }}
+  }
+
+
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+\end{itemize}
+
+Étant donné la présence de plusieurs éléments thématiques, le travail s'effectue surtout autour de la variation de ces motifs.
+
+Le thème principal est d'abord présenté avec deux énoncés du motif BACH; on le retrouve plusieurs fois (mesures 16 et suivantes, 22, 23, 30 à 33), présenté différemment à chaque fois: changements de nuances, de tessiture, de rythme, d'accentuation. On pourra remarquer, mesures 30 à 33, un procédé courant en musique sérielle: deux présentations de la série qui se suivent, rattachées par une note-pivot (dans le cas présent, la forme originale suit la récurrence). Le motif BACH se retrouve presque partout, à tel point qu'on peut parfois se demander si c'est volontaire: il s'agit d'un motif très chromatique qui a donc beaucoup de chances de se retrouver en musique atonale.
+
+Le troisième motif contient la plupart du temps une septième, qui est un des intervalles les plus courants en musique atonale. Il joue un grand rôle du point de vue rythmique en rompant avec le caractère mélodique du début de la pièce.
+
+2. \emph{Sehr rasch} (très rapide): la seconde pièce est bâtie sur une série horizontale de neuf sons (un son unique se répétant à la main gauche).
+
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       d1 f aes fis g a ces bes des
+              }}
+  }
+
+
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+Ici aussi le travail sur la variation entre plus avant dans le cadre de la composition sérielle: dans la première pièce, un motif servait rarement de mélodie et d'accompagnement; ici, la série est présentée en tant que mélodie, sous forme d'accord, en renversement. On remarquera, mesures 10 et suivantes, plusieurs énoncés de la série à distance de quinte. Dans cette pièce, les nuances et le rythme jouent un rôle prépondérant dans la variation. La forme se rapproche quant à elle de la forme-sonate, avec exposition et développement.
+
+3. \emph{Langsam} (lent): c'est la pièce la plus développée du recueil. La main gauche expose les cinq notes de la série de base:
+
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       bes'1 d, e b cis
+              }}
+  }
+
+
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+L'utilisation de la partie aiguë du clavier a incité à une comparaison avec l'écriture ravélienne. On retrouve l'usage de la série transposée dans ses quatre formes possibles, forme d'origine, récurrence, renversement et récurrence du renversement. Étant donné la taille de la série, la pièce n'est pas dodécaphonique; elle n'est pas non plus intégralement sérielle. Malgré tout, la structure sérielle se retrouve très fréquemment. 
+
+Dans cette pièce, Schoenberg utilise plusieurs éléments caractéristiques: une grande quantité de triolets, des notes rapides qui donnent une impression de trille.
+
+4. \emph{Schwungvoll} (plein d'élan): la quatrième pièce fait office de scherzo, d'une moindre complexité que les pièces précédentes. Un unique intervalle de sixte (et son renversement, la tierce majeure) en constitue l'espace thématique dès la première mesure. Ce thème engendre la série proprement dite:
+
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       dis'1 b d, e g
+              }}
+  }
+
+
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+Cette pièce est construite comme un crescendo suivi d'une decrescendo. À l'image de la pièce précédente, la structure sérielle est très développée.
+
+Dans ses compositions atonales, Schoenberg évite très souvent les accords classés; ce n'est pas tout à fait le cas ici (mesure 1, 7 et 18). Autre caractéristique de cette pièce, des motifs chromatiques de quatre sons.
+
+5. \emph{Walzer} (valse): seule pièce intégralement sérielle du recueil, elle répète plusieurs fois une série de douze sons sur un trois temps qui n'est pas sans faire songer, épisodiquement, à celui d'un ländler (mesures 29 à 34).
+
+\begin{center}
+\begin[notime]{lilypond}
+\version "2.14"
+
+\score{
+      \new Staff {
+      #(set-accidental-style 'forget)
+        \relative {
+       cis1 a' g b aes ges bes d e es c f,
+              }}
+  }
+\paper{
+  oddFooterMarkup = \markup {
+    \fill-line {
+    } 
+  }
+}
+\end{lilypond}
+\end{center}
+
+Pour le reste, c'est plutôt un semblant de valse viennoise où se décèle quelque intention parodique. Tout s'évanouit à la fin sur une batterie, comme un adieu à une époque révolue.
+
+On remarquera que l'usage de la série est encore très simple: elle est utilisée dans sa forme d'origine, parfois en partant d'un son autre que le premier; Schoenberg utilise cependant la récurrence de la forme originale à la fin de l'\oe{}uvre. Le travail de variation se fera donc au niveau du rythme, des nuances, de la polyphonie.
+
+Afin de \og{} briser \fg{} l'apparente rigueur du système sériel, Schoenberg utilise dans ces pièces divers procédés que nous allons décrire en détails :
+
+\begin{enumerate}[a.]
+\item un son de la série peut intervenir avant les sons qui le précèdent dans la série, pour autant qu'il soit tenu jusqu'à l'apparition de ces sons (par exemple, mesure 5, les son 9 précède les sons 6, 7 et 8, mais est tenu jusqu'à leur apparition, et même au-delà);
+\item l'énoncé d'une série, commencé à plusieurs voix, continue à une seule voix; simultanément, une nouvelle citation de la série commence (par exemple, mesure 31: les sons 11 et 12 concluent la série commencée aux mesures précédentes; pendant ce temps, à la main gauche, la série est à nouveau énoncée à partir du premier son);
+\item les sons de la série sont présentés en superposition de sorte que l'ordre de la série n'est pas respecté horizontalement (par exemple, mesure 34: les sons 5, 6 et 7 sont présentés parallèlement aux sons 8, 9, 10 et 11). On retrouve également ce phénomène dans la \emph{Suite op. 25} (mesures 2 et 3 du \emph{Präludium}) où le schéma est la suivant :
+
+	\begin{tabular}{cccccccc}
+		1 & 2 & 3 & 4 & 5 & 6  & 7  & 8  \\ 
+		  &   &   &   & 9 & 10 & 11 & 12
+	\end{tabular}
+\item un groupe de deux notes, généralement rapides, est répété à la manière d'une batterie (par exemple mesure 43, avec do \fetasharp{} et si);
+\item une série peut être interrompue avant que les douze notes aient été énoncées (par exemple mesure 67--68);
+\item un son ou groupe de sons peuvent servir simultanément à plusieurs présentations de la série (par exemple mesure 106, sons 1 et 2).
+\end{enumerate}
+
+Il est à remarquer que les arpégés sont considérés comme des accords; le sens de l'arpégé n'a donc aucune importance. Les trilles quant à eux sont considérés comme une seule note.
+
+La valse des \emph{Cinq pièces op. 23} est considérée comme la première \oe{}uvre de Schoenberg qui soit basée sur une série de douze sons; cependant, il est intéressant de remarquer quelques \og{} licences \fg{} par rapport à la technique sérielle:
+\begin{enumerate}[a{}.]
+\item mesures 16--17: manque le son 8 (ré);
+\item mesure 67: manque le son 5 (la \fetaflat{});
+\item mesure 76: ordre changé (le son 5 apparaît avant les sons 3 et 4);
+\item mesure 81: manque le son 5;
+\item mesure 87--88: manque le son 8;
+\item mesure 88: apparition anormale du son 12;
+\item mesure 104: inversion des sons 7 et 8;
+\item mesure 113: manque le son 7.
+\end{enumerate}
+
+Dans l'édition Wilhelm Hansen révisée en 1951, une erreur s'est glissée à la mesure 65, au deuxième accord de la mesure; après vérification dans l'édition de 1923, le do \fetaflat{} s'avère être un do \fetanatural{} , respectant ainsi l'ordre de la série.
+
+
+%--------------------------BIBLIOGRAPHIE------------------------------------
+%------------------------------------------------------------------------------
+%BIBLIOGRAPHIE
+\nocite{schoenberg:op23} \nocite{tranchefort1987} \nocite{oxford1989}
+
+\clearpage
+
+\addcontentsline{toc}{chapter}{\numberline{}Bibliographie}
+\nocite{bosseur1992,oxford1989,griffiths1992,tranchefort1987,howeler1949,rostand1970,schoenberg:op23,stuckenschmidt1968,stuckenschmidt1951,schoenberg1971,michels1990,leibowitz1969}
+
+\printbibliography
+%------------------------------------RESUME----------------------------------
+%------------------------------------------------------------------------------
+\addcontentsline{toc}{chapter}{\numberline{}Résumé}
+\chapter*{Résumé}
+Le présent travail se propose d'étudier les débuts du dodécaphonisme sériel au travers des \emph{Fünf Klavierskücke} op. 23 d'Arnold Schoenberg.
+Cependant, étant donné l'importance de l'\oe{}uvre pianistique dans le développement du langage de Schoenberg, nous présenterons également une description succincte de cette partie de son \oe{}uvre 
+
+
+
+\tableofcontents
+\end{document}
