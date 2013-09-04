@@ -1,0 +1,13 @@
+*.toc
+*.aux
+*.synctex*
+*.run*
+*.out
+*.log
+*.lof
+*.blg
+*.bbl
+*.aux
+*-blx.bib
+*-lily
+*-out
