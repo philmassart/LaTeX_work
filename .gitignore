@@ -10,7 +10,7 @@
 *.bbl
 *.aux
 *-blx.bib
-*-lily
-*-out
-old
-dir
+*-lily/
+*-out/
+old/
+dir/
