@@ -7,8 +7,12 @@
 *.log
 *.lof
 *.blg
+*.bcf
 *.bbl
 *.aux
+*.idx
+*.out
+*.run.xml
 *-blx.bib
 *-lily/
 *-out/
