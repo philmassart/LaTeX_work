@@ -10,6 +10,7 @@
 *.bcf
 *.bbl
 *.aux
+*.mx1
 *.idx
 *.out
 *.run.xml
