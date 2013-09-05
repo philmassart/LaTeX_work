@@ -1,0 +1,233 @@
+%\begin{flushleft}
+\documentclass[11pt,bibliography=totoc,numbers=noenddot,listof=flat]{scrreprt}%{scrbook} {scrreprt}
+%\usepackage{geometry}
+
+\usepackage{flupstyleutfbook}
+\usepackage[top=3.5 cm, bottom=3 cm, left=2.5 cm, right=2.5 cm]{geometry}
+
+\usepackage[parfill]{parskip}
+  
+
+\usepackage{url}
+\urlstyle{rm}
+\usepackage{ae}
+\usepackage{microtype}
+
+%\usepackage{textcomp}
+%\usepackage{pxfonts}
+%\makeatletter
+
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+
+\usepackage[multiple]{footmisc}
+
+\usepackage[charter]{mathdesign}
+%\usepackage{times}
+%\usepackage{txfonts}
+%\usepackage{pslatex}
+%\usepackage{pxfonts}
+%\usepackage{libertine}
+%\renewcommand{\bfseries}{\textsb}
+
+\usepackage[colorlinks=false,pdftex,]{hyperref}
+
+\usepackage{breakurl}
+\urlstyle{obeyspaces}
+\usepackage{makeidx}
+\makeindex
+\KOMAoptions {listof=totoc}
+\KOMAoptions  {index=totoc}
+\renewcommand*{\partpagestyle}{empty}
+
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=1ex,parsep=1ex,topsep=1ex,partopsep=1ex}
+
+%%%%%SETTINGS BIBLATEX%%%%%
+
+%\defbibheading{theorie}{\section*{Ouvrages musicaux}}
+\DeclareFieldFormat[thesis]{citetitle}{\mkbibemph{#1}} % ANCIENNEMENT QUOTE
+\DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}} %ANCIENNEMENT: QUOTE
+%\renewcommand{\bibnamedash}{------,{ }}
+\renewcommand{\bibhang}{0.5cm}
+\DeclareFieldFormat{url}{\url{#1}}
+%\DeclareFieldFormat{url}{\mkbibacro{URL}\addcolon\space\url{#1}}
+
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+
+\usepackage{caption}
+\addto\captionsfrench{\def\figurename{{\bf Figure}}} % Pour que les titres ne soient plus en smallcaps, soient en gras et soient Fig. au lieu de Figure.
+\addto\captionsfrench{\def\tablename{{\bf Tableau}}} % Pour que les titres ne soient plus en smallcaps, soient en gras et soient Fig. au lieu de Figure.
+
+\usepackage{multirow}
+
+%%%VEUVES - ORPHELINS%%%
+\widowpenalty=10000
+\clubpenalty=10000
+
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .gif}
+\AddThinSpaceBeforeFootnotes
+
+
+%\pagestyle{fancy}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyhead[CE]{\scshape \leftmark}
+%\fancyhead[CO]{\scshape \rightmark}
+%\fancyfoot[CO]{}
+%\pagestyle{headings}
+%\pagestyle{plain}
+% En-tete
+%\lhead{}        \chead{Lecture à vue et langages contemporains}        \rhead{}
+
+
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+\makeatletter
+\newcounter {subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection .\@alph\c@subsubsubsection}
+\newcommand\subsubsubsection{\@startsection{subsubsubsection}{4}{\z@}%
+                                     {-0.25ex\@plus -0.5ex \@minus -.2ex}% au départ -3.25 et -1
+                                     {1.5ex \@plus .2ex }%
+                                     {\normalfont\normalsize\itshape}}
+\newcommand*\l@subsubsubsection{\@dottedtocline{3}{10.0em}{4.1em}}
+\newcommand*{\subsubsubsectionmark}[1]{}
+\makeatother
+
+%%%%%%Aligner les footnotes sur le début du texte et non de la marge%%%%%
+\makeatletter
+\long\def\@makefntextFB#1{%
+	\ifx\thefootnote\ftnISsymbol
+		\@makefntextORI{#1}%
+	\else
+		\rule\z@\footnotesep
+		\setbox\@tempboxa\hbox{\@thefnmark}%
+			\ifdim\wd\@tempboxa>\z@
+				\kern2em\llap{\@thefnmark.\kern0.5em}%
+			\fi
+		\hangindent2em\hangafter\@ne#1
+	\fi}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%\begin{titlepage
+%\date {26 avril 2008}
+%%\maketitle
+%\begin{center}
+%\begin{LARGE}\textbf{TITRE\\ \vspace{1cm}
+%TITRE} 
+%\end{LARGE}  \vspace{2cm}
+%\\ Philippe Massart\vspace{12.5cm}
+%\\ Rapport de 
+%\\Stage
+%\end{center}
+
+%--------------------------PAGE DE TITRE---------- ------------------------
+%------------------------------------------------------------------------------
+\begin{titlepage}
+\title{Auditions commentées}
+%\subtitle{Cours de Frédéric d'Ursel}
+\author{Cours de Frédéric d'Ursel}
+\date{2013}
+\publishers{Rapport de fin d'année \\ Philippe Massart}
+%\dedication{dédicace}
+%\thanks{merci!}
+\maketitle
+\end{titlepage}
+
+%--------------------------COLOPHON---------- ------------------------
+%------------------------------------------------------------------------------
+%\clearpage
+%\thispagestyle{empty}
+%\vspace*{18cm}
+%
+%Travail réalisé avec \LaTeX{} et GNU Lilypond
+%%--------------------------CITATION------------------- ------------------------
+%------------------------------------------------------------------------------
+
+%\clearpage
+%\thispagestyle{empty}
+%\vspace*{10cm}
+%%\begin{minipage}{10cm}
+%\begin{center}
+%%\begin{quotation}
+%\noindent{}Fare una tesi significa divertirsi e la tesi è come il maiale, non se ne butta via niente.
+%%Tout est bruit pour qui a peur.%\footnote{trad}.
+%\\
+%\begin{flushright}
+%Umberto \textsc{Eco, \emph{Come si fà una tesi di laurea}}
+%%\textsc{Sophocle, \emph{Les Limiers}}
+%\end{flushright}
+%%\end{quotation}
+%\end{center}
+%%\end{minipage}
+%--------------------------INTRODUCTION------------ ------------------------
+%------------------------------------------------------------------------------
+\cleardoublepage
+\pagenumbering{roman}
+%\fancyfoot[CO]{\thepage}%ajouter CE si ça marche pas
+\clearscrheadfoot
+%\cfoot[\pagemark]{}
+%\cfoot{\pagemark}
+%\sommaire
+
+
+\cleardoublepage
+
+%\thispagestyle{empty}
+\pagenumbering{arabic}
+\pagenumbering{arabic}
+\clearscrheadfoot
+%\part{Généralités}
+%\chapter{Introduction}
+\clearscrheadfoot
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+\setheadsepline[17cm]{0.4pt}
+\setfootsepline[17cm]{0.4pt}
+\ihead{Auditions commentées}
+\ohead{Philippe Massart}
+\cfoot{-- \pagemark{} --}
+
+%\fancyfoot[CO]{\thepage}%ajouter CE si ça marche pas
+\section*{Relations chef--orchestre}
+Une thématique récurrente dans les documents proposés cette année pourrait être celle des relations entre le chef et son orchestre. Parallèlement à la pédagogie, où on est passé de cours \emph{ex cathedra} à des pédagogies plus actives et participatives, les échanges entre l'orchestre et son (ou ses) chef(s) ont évolué d'une dictature mêlée d'admiration\footnote{C'est d'autant plus marquant qu'historiquement parlant, le chef est lui-même issu de l'orchestre.} à une relation d'inter-dépendance où, tout en gardant à chacun sa place, tous trouvent dans l'autre une source d'enrichissement (et le font savoir).
+
+Le caractère très fort de certains de ces chefs est parfois à la base de grandes tensions tant dans l'orchestre qu'avec les solistes (on connaît la cohabitation difficile entre Celibidache et Michelangeli, par exemple). On pourrait également citer l'anecdote d'un contrebassiste venu avec une longue vue en répétition, pour se moquer de la battue de Fritz Reiner (dont la baguette, bien que très grande, ne faisait que d'assez petits mouvements); il sera évidemment renvoyé!
+
+\section*{Karajan}
+Le cas de Karajan est assez particulier: tout à la fois tyran et adulé par ses musiciens, son goût pour le \og~beau son~\fg{} se muera petit à petit en une obsession. Chose rare à l'époque et bien avant les mouvements \og{}~baroqueux~\fg{}, il avait marqué son goût pour la recherche sonore en faisant venir des bois français pour ses enregistrements de Debussy\footnote{\emph{La Mer}, enregistrée pour EMI.}. Quand on sait qu'encore aujourd'hui, les bois de facture françaises n'ont pas lieu de citer dans les orchestre germaniques, on mesure la nouveauté de la démarche.
+
+
+\section*{Furtwängler}
+La précision de Karajan succédait à la gestique \og{}~floue~\fg{} de Furtwängler; des musiciens ayant joué sous sa direction témoignaient du stress de l'orchestre lors des attaques. Il avait érigé ce flou en valeur, ce qui le fera déclarer, lors d'un concert de Toscanini\footnote{Les sextolets de l'introduction de la \emph{9e Symphonie} de Beethoven étaient mesurés chez Toscanini, joués comme trémolos chez Furtwängler}: \og~{}\emph{Fichu batteur de mesure}~\fg{}. Il avait également une très grande présence (augmentée encore par sa taille imposante); cette seule présence, même dans les coulisses, suffisait à modifier le son de l'orchestre\footnote{Témoignages de musiciens sur le DVD \emph{The art of conducting}, Teldec}.
+
+On pourrait poursuivre la comparaison entre les deux chefs dans leurs relations avec le régime nazi; leur attitude très différente les mènera l'un comme l'autre devant les commissions de dénazification.
+
+\section*{Chefs d'un orchestre, chefs itinérants}
+La mobilité des chefs s'est également accentuée par rapport au milieu du XX\ieme{} siècle. Si Karajan, Furtwängler, Reiner ou Bernstein sont avant tout associés à un orchestre en particulier, les chefs actuels sont beaucoup plus mobiles (les pratiques contractuelles et les lois du marché favorisant cette pratique). On pourrait, à titre d'exemple, citer Boulez qui choisit ses orchestres en fonction des répertoires qu'il enregistre; il a ainsi enregistre Bartók à Chicago, orchestre qui a travaillé pendant des décennies avec deux hongrois (Reiner puis Solti).
+
+
+\section*{Stress et frustrations}
+Le film \emph{Trip to Asia} mettait quant à lui l'accent sur le vécu des musiciens d'orchestre dans le cadre d'une tournée. À l'image de certaines émissions de télé-réalité, la vie commune sur une aussi longue période exacerbe les tensions et génère un stress propre qui s'ajoute à celui des prestations. Peut-être avait-on oublié que, même dans les meilleurs orchestres du monde, les difficultés humaines sont similaires: routine, crainte pour son emploi, frustration de l'orchestre par rapport au soliste\footnote{Celle-ci s'apparente à celle du professeur d'académie qui, vu ses horaires décalés, peut moins que d'autres se rendre au concert le soir.}, etc.
+
+\section*{La musique occidentale en Orient}
+\emph{From Mao to Mozart: Isaac Stern in China} présente une réflexion plus que jamais d'actualité: Isaac Stern s'étonne de l'intérêt des Chinois pour la musique occidentale. Ce qu'il notait il y a trente ans se voit chez nous lors de chaque occurrence du Concours Reine Elisabeth: l'enseignement en Chine (et plus encore pour l'instant en Corée du Sud) accorde à la musique occidentale une place importante. Le pianiste François-Joël Thiollier ne devait pas être au courant, lui qui déclarait il y a quelques années, sur les antennes de la RTBF lors d'une édition du Concours, que les Asiatiques n'étaient pas capables d'intégrer suffisamment la culture occidentale que pour pouvoir jouer correctement cette musique!
+
+On en arrive même à ce que les Coréens connaissent mieux que nos enfants les chansons populaires de notre répertoire\footnote{Ma belle-famille étant Coréenne, j'ai encore pu le vérifier durant le dernier congé...}; on peut préciser à ce sujet que les autorités coréennes ont déclaré l'art et la culture comme faisant partie de leurs richesses économiques à développer et faire fructifier. On est loin du compte dans nos contrées...
+
+\section*{Rachmaninov: un compositeur parmi les pianistes (ou inversement)}
+Au-delà de tous les pianistes connus (Lupu, Perahia, Argerich, Horowitz, Kocsis, Gieseking et des dizaines d'autres), il en est un que peu écoutent alors qu'il était l'un des meilleurs de son temps: Rachmaninov. À~une époque où la mode est à l'authenticité et la recherche de ce qu'à voulu transmettre le compositeur, on peut s'étonner que la plupart des interprètes de Rachmaninov n'aient jamais entendu le compositeur jouer sa propre musique. Contrairement à Bartók, Rachmaninov a joué dans des conditions relativement acceptables pour l'époque: on est par contre surpris par un jeu presque objectif, à l'opposé des excès sentimentalistes dont certains affublent sa musique (en laissant au passage un clavier sirupeux aux pianistes suivants...). Ici également, l'échange entre les rôles (compositeur--interprète, chef--orchestre) est riche en enseignements, la connaissance de l'autre apportant une nouvelle connaissance de soi.
+
+En conclusion, si Leibowitz parle du compositeur et de son double\footnote{\textsc{René Leibowitz}, \emph{Le compositeur et son double}, Gallimard, 1971}, la métaphore peut très bien s'appliquer au chef et à son orchestre (comme au compositeur et son interprète, au pédagogue et son élève) comme miroirs réciproques. Déformants et à facettes, certes, mais miroirs tout de même.
+
+
+
+\end{document}

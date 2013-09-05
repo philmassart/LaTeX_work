@@ -1,0 +1,331 @@
+%\begin{flushleft}
+\documentclass[11pt,bibliography=totoc,numbers=noenddot,listof=flat]{scrreprt}%{scrbook} {scrreprt}
+%\usepackage{geometry}
+
+\usepackage{flupstyleutfbook}
+\usepackage[top=3 cm, bottom=3 cm, left=2 cm, right=2 cm]{geometry}
+
+\usepackage[parfill]{parskip}
+  
+
+\usepackage{url}
+\usepackage{ae}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{array}
+
+%\usepackage{textcomp}
+%\makeatletter
+
+\usepackage[automark]{scrpage2}
+\pagestyle{scrheadings}
+
+\usepackage[multiple]{footmisc}
+
+\usepackage[bitstream-charter]{mathdesign}
+
+\usepackage[colorlinks=false,pdftex]{hyperref}
+\hypersetup{ pdfinfo={
+Title={Titre},
+Subject={Sujet}, 
+Author={Philippe Massart}, % ...
+}
+}
+\usepackage{makeidx}
+\makeindex
+\KOMAoptions {listof=totoc}
+\KOMAoptions  {index=totoc}
+\renewcommand*{\partpagestyle}{empty}
+
+\usepackage{tikz}
+\usetikzlibrary{trees} % LATEX and plain TEX
+
+%%%%%SETTINGS BIBLATEX%%%%%
+
+\defbibheading{partitions}{\section*{Partitions}}
+\defbibheading{theorie}{\section*{Ouvrages musicaux}}
+\defbibheading{divers}{\section*{Ouvrages divers}}
+\DeclareFieldFormat[thesis]{citetitle}{\mkbibemph{#1}} % ANCIENNEMENT QUOTE
+\DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}} %ANCIENNEMENT: QUOTE
+%\renewcommand{\bibnamedash}{------,{ }}
+\renewcommand{\bibhang}{0.5cm}
+
+\usepackage{epigraph}
+
+\usepackage{caption}
+\addto\captionsfrench{\def\figurename{{\bf Fig.}}} % Pour que les titres ne soient plus en smallcaps, soient en gras et soient Fig. au lieu de Figure.
+
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .gif}
+\AddThinSpaceBeforeFootnotes
+
+%\pagestyle{fancy}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyhead[CE]{\scshape \leftmark}
+%\fancyhead[CO]{\scshape \rightmark}
+%\fancyfoot[CO]{}
+%\pagestyle{headings}
+%\pagestyle{plain}
+% En-tete
+%\lhead{}        \chead{Lecture à vue et langages contemporains}        \rhead{}
+
+%%%%%%Aligner les footnotes sur le début du texte et non de la marge%%%%%
+\makeatletter
+\long\def\@makefntextFB#1{%
+	\ifx\thefootnote\ftnISsymbol
+		\@makefntextORI{#1}%
+	\else
+		\rule\z@\footnotesep
+		\setbox\@tempboxa\hbox{\@thefnmark}%
+			\ifdim\wd\@tempboxa>\z@
+				\kern2em\llap{\@thefnmark.\kern0.5em}%
+			\fi
+		\hangindent2em\hangafter\@ne#1
+	\fi}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\usepackage[multiple]{footmisc}
+
+
+
+\begin{document}
+%\begin{titlepage
+%\date {26 avril 2008}
+%%\maketitle
+%\begin{center}
+%\begin{LARGE}\textbf{TITRE\\ \vspace{1cm}
+%TITRE} 
+%\end{LARGE}  \vspace{2cm}
+%\\ Philippe Massart\vspace{12.5cm}
+%\\ Rapport de 
+%\\Stage
+%\end{center}
+
+%--------------------------PAGE DE TITRE---------- ------------------------
+%------------------------------------------------------------------------------
+%\begin{titlepage}
+%\title{Titre}
+%\subtitle{sous-titre}
+%\author{Auteur}
+%\date{date}
+%\publishers{publisher}
+%\dedication{dédicace}
+%%\thanks{merci!}
+%\maketitle
+%\end{titlepage}
+
+%--------------------------COLOPHON---------- ------------------------
+%------------------------------------------------------------------------------
+%\clearpage
+%\thispagestyle{empty}
+%\vspace*{18cm}
+%
+%Travail réalisé avec \LaTeX{} et GNU Lilypond
+%%--------------------------CITATION------------------- ------------------------
+%------------------------------------------------------------------------------
+
+%\clearpage
+%\thispagestyle{empty}
+%\vspace*{10cm}
+%%\begin{minipage}{10cm}
+%\begin{center}
+%%\begin{quotation}
+%\noindent{}Fare una tesi significa divertirsi e la tesi è come il maiale, non se ne butta via niente.
+%%Tout est bruit pour qui a peur.%\footnote{trad}.
+%\\
+%\begin{flushright}
+%Umberto \textsc{Eco, \emph{Come si fà una tesi di laurea}}
+%%\textsc{Sophocle, \emph{Les Limiers}}
+%\end{flushright}
+%%\end{quotation}
+%\end{center}
+%%\end{minipage}
+%--------------------------INTRODUCTION------------ ------------------------
+%------------------------------------------------------------------------------
+\cleardoublepage
+\pagenumbering{roman}
+%\fancyfoot[CO]{\thepage}%ajouter CE si ça marche pas
+\clearscrheadfoot
+%\cfoot[\pagemark]{}
+%\cfoot{\pagemark}
+%\sommaire
+
+
+\cleardoublepage
+
+%\thispagestyle{empty}
+\pagenumbering{arabic}
+\pagenumbering{arabic}
+\clearscrheadfoot
+%\part{Généralités}
+%\chapter{Introduction}
+\clearscrheadfoot
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+\setheadsepline[17cm]{0.4pt}
+\setfootsepline[17cm]{0.4pt}
+\ihead{Didactique générale}
+\ohead{Philippe Massart}
+\cfoot{-- \pagemark{} --}
+
+%\fancyfoot[CO]{\thepage}%ajouter CE si ça marche pas
+\section*{Historique du piano}
+
+Le piano est un instrument marqué d'origines et d'héritages variés; son clavier est un lointain descendant de l'hydraule de Ctesibius d'Alexandrie (III\ieme{} siècle avant J.-C.), l'association clavier -- cordes  l'apparente au clavicorde et au clavecin alors que son appartenance aux cordes frappées le rapproche du clavicorde (encore une fois) et au-delà au tympanon.
+
+Ces influences se sont cristallisées sous la forme du \emph{piano-forte} inventé par Bartolomeo Cristofori (1655--1731), dont le but était d'étendre les possibilités expressives du clavecin en particulier dans le domaine des nuances (d'où son nom); il construit donc un \emph{gravicembalo col piano e forte} dans une caisse de clavecin. Une première \og{}évolution \fg{} apparaît en 1758 avec le forte-piano, qui reprend la même mécanique mais la place dans la caisse d'un clavicorde. À ce moment, le futur piano achève d'assumer ses antécédents.
+
+Vers 1820, les bases du piano moderne se dessinent : double échappement, cordes filées, tension des cordes beaucoup plus importante, cadre métallique, utilisation de trois cordes par note, croisement des cordes graves et aiguës. Ces évolutions techniques sont à la fois causes et conséquences de l'évolution stylistique (les compositeurs provoquent les évolutions organologiques, et s'appuient sur ces dernières pour explorer de nouvelles options stylistiques), comme les notes répétées ou une puissance sonore accrue.
+
+C'est également l'époque où l'instrument devient très populaire; on le retrouve dans les salons et sert à la diffusion de nombreuses d'\oe{}uvres par le biais de transcriptions, jouant ainsi le rôle qu'aura la radio au siècle suivant; il deviendra progressivement un élément de l'éducation des jeunes filles de bonne famille. À partir de là, une génération de compositeurs pianistes va se succéder (Chopin, Schumann, Liszt, Brahms) après lesquels la technique pianistique et la construction de l'instrument n'évolueront que très peu.
+
+Au XX\ieme{} siècle et aujourd'hui, le piano n'est plus l'instrument roi qu'il a été; il aura servi d'outil d'expérimentation (sur lequel les compositeurs testent leurs nouveautés stylistiques, comme Schoenberg), d'aide à la composition (Stravinsky, par exemple) mais va surtout s'intégrer à des ensembles plus variés, perdant son statut de soliste pour un rôle de soutien rythmique et harmonique (à l'image de la voix chez Steve Reich, plus souvent utilisée pour son timbre que comme soliste). Le rôle de diffusion qu'il avait eu précédemment évolue au XX\ieme{} siècle avec le développement de nombreuses initiatives pédagogiques (Bartók, Kurtág etc.).
+
+\section*{Exigences de l'apprentissage du piano}
+L'apprentissage du piano met en \oe{}uvre de manière simultanée plusieurs processus parfois antinomiques:
+
+\subsection*{Coordinations gauche -- droite, mains -- pieds, indépendance(s) des doigts}
+Les soucis de coordination tiennent entre autres à la difficulté qu'ont les élèves à se concentrer sur deux aspects en même temps; il faut donc veiller à ce que cette concentration se superpose à un élément automatique ou instinctif (géré par l'hémisphère droit). Dans le cas d'une mélodie accompagnée, par exemple, l'automatisation de l'accompagnement permettra une meilleure concentration sur la mélodie; c'est particulièrement le cas lors des superpositions binaire -- ternaire. L'indépendance des doigts (touchers différents ou polyrythmie dans une même main) intervient plus tard dans la formation, mais participe des mêmes mécanismes et peut être abordée d'une manière similaire.
+
+\subsection*{Capacités de lecture et de déchiffrage sur 2 portées}
+Les mécanismes de lecture sont généralement abordés et entraînés dans le cadre des cours de formation musicale; c'est l'occasion d'encourager et d'aider les élèves à faire le lien entre les deux cours, et mettre en application les concepts parfois abstraits abordés dans les autres cours (ceci dépasse évidemment de très loin le seul cas de la lecture).
+
+\subsection*{Localisation sur l'instrument}
+Contrairement aux bois et cuivres par exemple, la partie du corps qui crée le son doit parfois parcourir une grande distance; une façon de procéder serait d'entraîner la vison périphérique afin de localiser approximativement l'emplacement des mains sur le clavier tout en regardant la partition.
+
+\subsection*{Mémoire à court terme}
+Même avec une bonne localisation, la difficulté croissante des partitions (et surtout le nombre de notes et de rythmes à gérer simultanément dans un court laps de temps) rendent nécessaire une mémoire à court terme, permettant une lecture par \og{} bloc\fg{}. Au-delà des mécanismes de lecture et d'organisation du regard, le travail sans partition ou sans instrument (voire les deux), sur des structures simples, permet petit à petit de développer cette mémoire. Les capacités de mémorisation étant différentes chez chacun, il est plus intéressant de se baser sur des repères proposés par les élèves, quitte à leur en proposer d'autres par la suite.
+
+\subsection*{Dissociation du couple dissonance -- erreur}
+Le caractère harmonique de l'instrument fait ressortir les dissonances, avec le risque chez l'élève d'associer dissonance et erreur. Un moyen d'habituer les élèves à la dissonance et de la dissocier du sentiment d'erreur est d'aborder très tôt les langages contemporains.
+
+\subsection*{Apnée pianistique}
+Le pianiste a ceci de commun avec le cachalot qu'il passe de longs moments sans vraiment respirer; une mise en parallèle de sa respiration avec une partition mettrait en évidence des polyrythmies dignes de Stravinsky! Il est donc important de mettre en liaison les phrases et ponctuations musicales et la respiration physique, par exemple en inventant un texte dont le rythme et la ponctuation suivraient la musique. On peut aussi rêver d'un jour où la formation vocale fera partie de celle d'un pianiste (ou à défaut d'aborder la problématique en formation musicale, d'où la nécessité là comme ailleurs de contacts entre collègues).
+
+\subsection*{L'élève et son instrument}
+Si la pratique instrumentale hors du lieu d'enseignement tient de l'évidence, elle n'en est pas une dans les milieux sociaux dans lesquels l'achat ou la location d'un piano n'est pas envisageable (pour des raisons financières ou de place, par exemple). D'autres solutions existent (accès aux classes d'académie, instruments numériques moins chers, moins encombrants et moins dérangeants pour les voisins etc.) mais il est impératif de tenir compte de ce contexte dans la façon de travailler avec les élèves.
+
+Ces exigences rendent indispensable une méthode de travail dans le déchiffrage et la coordination, sous peine d'être submergé par des difficultés qui, prises isolément, ne posent pas nécessairement de souci mais s'avèrent compliquées à gérer une fois présentes simultanément. Ce travail demande lui-même une coordination entre collègues et une vue d'ensemble de la vie d'une école, au-delà de son propre intitulé de cours.
+
+
+
+\section*{Expérience personnelle d'apprentissage}
+Ma propre expérience est assez variée et les trente années passées depuis le premier contact avec l'instrument m'encouragent à ne pas distinguer mon instrument du reste de mon apprentissage musical. Si l'apprentissage en lui-même était très classique (tant à l'académie qu'au conservatoire), il a toujours été accompagné de plusieurs constantes:
+
+\begin{itemize}
+\item l'appartenance à ce qu'on pourrait appeler une famille d'enseignants a toujours motivé le réflexe de tenter de se mettre à la place de l'autre (à la place du professeur étant élève, et la réciproque une fois enseignant à mon tour);
+
+\item les goûts et orientations différentes de chaque enfant de la famille a toujours été vu comme source d'enrichissement mutuel, d'où une curiosité dans de nombreux domaines;
+\item certains professeurs étaient des amis avant d'être mes professeurs, ou sont devenus très proches par la suite sans qu'il y ait cependant de confusion des genres. Ils ont donc chacun à leur manière constitué un modèle, servant de témoin--relais vers l'étape suivante. Chacun d'entre eux a ouvert des portes, en a montré d'autres entre-ouvertes en me laissant à chaque fois le choix d'en fermer certaines;
+\item comme conséquence de ces relations enseignant -- élève, la motivation de travail était parfois simplement de l'ordre de \og{} faire plaisir au professeur\fg{}, le temps qu'une autre motivation plus personnelle resurgisse;
+\item les matières autres qu'instrumentales ont parfois pris le pas sur le piano: la musique contemporaine, la musique de chambre, l'accompagnement ou l'édition musicale en sont les meilleurs exemples; ma situation en tant qu'enseignant (principalement en cours complémentaires, c'est-à-dire des cours destinés à tisser des liens entre les autres) en est probablement une conséquence directe. Malheureusement, ma situation administrative en est également une conséquence directe;
+\item j'ai longtemps eu (comme élève d'académie) des facilités techniques, avec comme conséquence négative l'absence de développement d'une méthode de travail, pourtant nécessaire au-delà d'un certain palier; d'une manière semblable, la grande taille de mes mains a souvent été utilisée comme un avantage, sans nécessairement le développer plus avant en cours de croissance avec comme conséquence des doigts longs dans une main peu élargie;
+\item mon apprentissage de la technique pianistique s'est faite en trois étapes, caractérisées chacune par une approche technique tout à fait différente: académie (école \og{} française \fg{}, jusqu'en 1992), conservatoire \og{} première époque \fg{} (école \og{} Vanden Eynde \fg{} jusqu'en 2000), conservatoire \og{} deuxième époque \fg{} (retour partiel à la première).
+\end{itemize}
+
+
+\section*{Points forts du piano}
+
+\subsection*{Premier contact aisé}
+Au piano, la création du son semble \og{} facile \fg{}, par rapport à d'autres instruments (vents et cordes p. ex.); les débuts sont donc plus aisés, même si la tendance s'inverse par la suite.
+
+\subsection*{Instrument \og{} accordé\fg{}}
+L' accord (relativement) constant est une aide à la formation de l'oreille (pour autant qu'on dispose d'un instrument régulièrement accordé ou d'un clavier numérique, parfois meilleur qu'un mauvais piano mal réglé).
+
+\subsection*{Répertoire pléthorique}
+L'accès à un répertoire étendu (même s'il s'étend sur une période plus limitée que d'autres) est une des conséquences de la grande tessiture de l'instrument; il est donc possible de transcrire ou arranger un grand nombre de pièces pour le piano, et plus encore pour piano à quatre mains (dans l'optique d'un cours semi--collectif).
+\subsection*{Instrument harmonique}
+
+Le caractère harmonique et polyphonique du piano est flatteur pour un élève (et plus encore pour deux), le spectre acoustique étant d'autant plus large.
+
+\subsection*{Instrument identique pour chacun}
+Il y a égalité de traitement d'un élève à l'autre vis-à-vis de l'instrument dans le cadre de la leçon: chaque élève joue sur le même instrument. En contrepartie, l'inégalité (sociale, notamment) entre les élèves est déplacée dans le cadre privé.
+
+\section*{Réflexion sur la rédaction de ce travail}
+
+L'homme étant un animal historique, il se construit entre autre sur ses expériences, vues souvent à travers le prisme de ce qu'il est devenu. L'intérêt premier du présent travail est de porter un regard à la fois rétrospectif et élargi par le recul sur quelques années (trente, dans le cas présent), regard qui constituera une des sources des outils pédagogiques à (re?)créer et utiliser.
+
+La mise en perspective des exigences et des avantages de l'instrument permet de se rendre compte que chaque point fort comporte un revers, chaque exigence peut amener un point fort.
+
+Ce regard devient la base d'une possible remise en question qui, même si elle aboutissait aux mêmes réponses, aurait au minimum la richesse du chemin (et du regard) parcouru. Ce serait alors l'occasion de vérifier l'adage de Lao-Tseu, selon lequel \emph{le chemin qui mène au bonheur n'existe pas; le bonheur, c'est le chemin.}
+
+
+
+
+%\chapter{Suite}
+%\section{test}
+%\section{test}
+%\section{test}
+%\section{test}
+%
+%\chapter{Troisieme}
+%\section{test}
+%\section{test}
+%\section{test}
+%\section{test}
+%
+%\chapter{Encore un}
+%\section{test}
+%\section{test}
+%\section{test}
+%\section{test}
+%
+%\chapter{Encore un}
+%\section{test}
+%\section{test}
+%\section{test}
+%\section{test}
+%
+%\chapter{Encore un}
+%\section{test}
+%\section{test}
+%\section{test}
+%\section{test}
+
+
+%\bibliographystyle{siam-fr}%{flup}
+%\defbibheading{Biblio}{bibintoc}
+
+%\part{Références}
+%\thispagestyle{empty}
+%\addcontentsline{toc}{chapter}{Bibliographie}
+%\chapter*{Bibliographie}
+%\rohead{Bibliographie}
+%%\lhead{}
+%%\rhead{}  
+%\nocite{crumb:makrokosmos} \nocite{ikebe:ascension} \nocite{poliart:temps} \nocite{adler1989} \nocite{bezerra:2000} \nocite{chailley1984} \nocite{griffiths1992} \nocite{mager1994} \nocite{pierce2000} \nocite{bach:wtk1} \nocite{oxford1989}  \nocite{tranchefort1987} \nocite{eco2008} \nocite{werber2009} \nocite{ecocarriere2010} \nocite{eco2002} \nocite{kim2006} \nocite{kim2009} \nocite{giot2003} \nocite{mozart:jeu} \nocite{roberge2010} \nocite{andre1990}
+%\addcontentsline{toc}{section}{Ouvrages musicaux}
+%\printbibliography[heading=theorie, keyword=musique, notkeyword=partition]
+%
+%\addcontentsline{toc}{section}{Partitions}
+%\printbibliography[heading=partitions, keyword=partition]
+%
+%\addcontentsline{toc}{section}{Références diverses}
+%\printbibliography[heading=divers, notkeyword=musique, notkeyword=partition]
+%
+%
+%\tableofcontents
+%\rohead{\leftmark} % Pour éviter un "Chapitre Table des matières" dans l'en-tête
+%
+%\listoffigures
+%
+%\printindex
+
+%%------------------------------------REMERCIEMENTS------------------------
+%%------------------------------------------------------------------------------
+%\addcontentsline{toc}{chapter}{Remerciements}
+%\chapter*{Remerciements}
+%À .\\
+%
+%À .\\
+%
+%À mon frère Thierry pour ses conseils dans l'utilisation de \LaTeX, et sa thèse \emph{Multi-scale modeling of damage in masonry structures} qui m'a donné envie de réaliser le présent travail à l'aide de cet outil fantastique.\\
+%
+%À .
+%\newpage~
+%\thispagestyle{empty}
+%\newpage
+%\thispagestyle{empty}
+
+\end{document}
