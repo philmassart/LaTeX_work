@@ -12,6 +12,8 @@
 *.aux
 *.mx1
 *.idx
+*.ilg
+*.ind
 *.out
 *.run.xml
 *-blx.bib
