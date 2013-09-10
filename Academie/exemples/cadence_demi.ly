@@ -19,6 +19,6 @@
     <b g'>
   }
   \addlyrics {
-    I IV
+    I V
   }
 >>

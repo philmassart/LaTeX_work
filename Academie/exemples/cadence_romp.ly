@@ -10,13 +10,13 @@
 <<
   \new Staff \relative c' {
     \override Staff.TimeSignature #'stencil = ##f 
-    \clef treble <d f>1
-    <c e>1
+    \clef treble <g' b>1
+    <e c'>1
   }
   \new Staff \relative c {
     \override Staff.TimeSignature #'stencil = ##f 
-    \clef bass <b g'>1 
-    <a a'>
+    \clef bass <g' d'>1 
+    <a c>
   }
   \addlyrics {
     V VI
