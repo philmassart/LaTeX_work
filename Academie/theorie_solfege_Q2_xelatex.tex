@@ -3,7 +3,7 @@
 
 % The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
 
-%!TEX TS-program = XeLaTeX
+%!TEX TS-program = LuaLaTeX
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[11pt]{scrreprt}
@@ -23,11 +23,11 @@
 
 \usepackage[frenchb]{babel}
 
-\usepackage{fontspec,xltxtra,xunicode}
-%\usepackage{fontspec,luatextra,xunicode}
+%\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{fontspec,xunicode}
 
-\defaultfontfeatures{Mapping=tex-text}
-%\defaultfontfeatures{Ligatures=TeX}
+%\defaultfontfeatures{Mapping=tex-text}
+\defaultfontfeatures{Ligatures=TeX}
 
 %\setromanfont[Mapping=tex-text]{Garaline Regular}
 %\setromanfont{Linux Libertine O}
@@ -55,8 +55,8 @@
 
 \usepackage{microtype}
 \usepackage{multirow}
-\usepackage[babel,french=guillemets*]{csquotes}
-\MakeOuterQuote{"}
+%\usepackage[french=guillemets*]{csquotes}
+%\MakeOuterQuote{"}
 \frenchspacing
 \usepackage{hyperref}
 %\newcommand{\ieme}{\textsuperscript{ieme}}
@@ -390,7 +390,7 @@ Les autres modes ont malgré tout gardé une certaine importance, variable selon
 \item la gamme pentatonique
 \end{itemize}
 
-\subsection{Les modes dits " d'église "}\index{modes}
+\subsection{Les modes dits « d'église »}\index{modes}
 Les modes d'église sont des modes issus de la musique du moyen âge et dont la terminologie est d'inspiration grecque. Pour retrouver leurs intervalles, il suffit de partir des touches blanches d'un piano (do - ré - mi - fa - sol - la - si). En fonction de la note de départ, on obtiendra un de ces modes:
 
 \begin{enumerate}
