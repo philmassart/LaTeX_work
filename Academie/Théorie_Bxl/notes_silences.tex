@@ -1,0 +1,118 @@
+%!TEX root = theorie_solfege_Bxl.tex
+\clearpage
+\pagenumbering{arabic}
+\lhead{Aide-mémoire de théorie}
+\rhead{Formation 1}
+\fancyfoot[CO]{\thepage}%ajouter CE si ça marche pas
+
+\chapter{Les valeurs de notes et de silences}
+\section{Les valeurs de notes}
+Le dessin des notes est constitué de 3 parties:
+\begin{itemize}
+\item la tête de la note (noire, blanche, ronde)
+\item la hampe\index{hampe} (la barre sur le côté. À droite vers le haut, ou à gauche vers le bas)
+\item le crochet\index{crochet} (quand les notes sont accrochées, on parle de \emph{ligature}\index{ligature})
+\end{itemize}
+
+Voici les valeurs rythmiques les plus courantes:
+%\begin{center}
+%\includegraphics{exemples/diagrammenotes}\label{tableaunotes}
+%\end{center}
+
+
+\begin{center}\label{tableaunotes} 
+
+\begin{tikzpicture}
+[level distance=15mm,
+level 1/.style={sibling distance=90mm}, 
+level 2/.style={sibling distance=40mm}, 
+level 3/.style={sibling distance=20mm},
+level 4/.style={sibling distance=12mm},
+level 5/.style={sibling distance=5mm}]
+
+\node {\wholeNote} child {node {\halfNote}
+child {node {\crotchet} child {node {\quaver} child {node {\semiquaver}} child {node {\semiquaver}} } child {node {\quaver} child {node {\semiquaver}} child {node {\semiquaver}} } 
+} child {node {\crotchet}
+child {node {\quaver} child {node {\semiquaver}} child {node {\semiquaver}} } child {node {\quaver} child {node {\semiquaver}} child {node {\semiquaver}} }
+}
+} 
+child {node {\halfNote}
+child {node {\crotchet} child {node {\quaver} child {node {\semiquaver}} child {node {\semiquaver}} } child {node{\quaver} child {node {\semiquaver}} child {node {\semiquaver}} }
+}
+child {node {\crotchet} child {node{\quaver} child {node {\semiquaver}} child {node {\semiquaver}} } child{node{\quaver} child {node {\semiquaver}} child {node {\semiquaver}} }   }
+};
+\end{tikzpicture}
+\end{center}
+
+
+
+\section[La noire]{La noire \crotchet}\index{noire}
+La noire est la valeur rythmique la plus simple; elle correspond souvent à une pulsation et à un temps (dans les mesures \lilyTimeSignature{2}{4}, \lilyTimeSignature {3}{4} ou \lilyTimeSignature{4}{4}).
+\section[La blanche]{La blanche \halfNote}\index{blanche}
+Elle vaut 2 noires. Elle se poursuit donc sur 2 noires entières, jusqu'au bout de la 2\ieme { }(juste avant le début de la pulsation suivante)
+\section[La ronde]{La ronde \wholeNote}\index{ronde}
+La ronde vaut 4 noires ou 2 blanches. Elle sert également à calculer les chiffres de mesure.
+\section[La croche]{La croche \quaver}\index{croche}
+Une croche seule vaut la moitié d'une noire. Pour obtenir la même durée qu'une noire, il faut donc 2 croches. Comme leur nom l'indique, ces notes peuvent s'accrocher et s'écrire ainsi: \twoBeamedQuavers{}
+Mais, même accrochées, il s'agit toujours bien de 2 croches.
+\section[La double croche]{La double croche \semiquaver}\index{double croche}
+Une double croche seule vaut le quart d'une noire. Pour obtenir la même durée qu'une noire, il en faut donc 4. Il en faudra 2 pour obtenir la durée d'une croche. Comme les croches, ils peuvent s'accrocher. %Groupées par 4, elles s'écrivent ainsi: \Vier\SechBL\SechBL\SechBL
+
+\section{Les valeurs de silences}
+À chaque valeur de note correspond une valeur de silence:
+\begin{itemize}
+\item la pause\index{pause} \hspace{1ex}\wholeNoteRest{}\hspace{1ex} (sous la 4\ieme{} ligne) correspond à la ronde
+\item demi-pause\index{demi-pause} \hspace{1ex}\halfNoteRest\hspace{1ex} (sur la 3\ieme{} ligne) correspond à la blanche
+\item le soupir\index{soupir} \crotchetRest{} correspond à la noire
+\item le demi-soupir\index{demi-soupir} \quaverRest{} correspond à la croche
+\item le quart de soupir\index{quart de soupir} \semiquaverRest{} correspond à la double-croche .
+\end{itemize}
+
+La pause peut aussi être utilisée pour remplir une mesure de silence: elle prend alors la valeur de la mesure complète.
+%\begin{center}
+%\includegraphics{exemples/diagrammesilences}
+%\end{center}
+
+\begin{center}
+
+\begin{tikzpicture} 
+[level distance=15mm,
+level 1/.style={sibling distance=90mm}, 
+level 2/.style={sibling distance=40mm}, 
+level 3/.style={sibling distance=20mm},
+level 4/.style={sibling distance=12mm},
+level 5/.style={sibling distance=5mm}]
+
+\node {\wholeNoteRest} child {node {\halfNoteRest}
+child {node {\crotchetRest} child {node {\quaverRest} child {node {\semiquaverRest}} child {node {\semiquaverRest}} } child {node {\quaverRest} child {node {\semiquaverRest}} child {node {\semiquaverRest}} } 
+} child {node {\crotchetRest}
+child {node {\quaverRest} child {node {\semiquaverRest}} child {node {\semiquaverRest}} } child {node {\quaverRest} child {node {\semiquaverRest}} child {node {\semiquaverRest}} }
+}
+} 
+child {node {\halfNoteRest}
+child {node {\crotchetRest} child {node {\quaverRest} child {node {\semiquaverRest}} child {node {\semiquaverRest}} } child {node{\quaverRest} child {node {\semiquaverRest}} child {node {\semiquaverRest}} }
+}
+child {node {\crotchetRest} child {node{\quaverRest} child {node {\semiquaverRest}} child {node {\semiquaverRest}} } child{node{\quaverRest} child {node {\semiquaverRest}} child {node {\semiquaverRest}} }   }
+};
+\end{tikzpicture}
+\end{center}
+
+
+
+\section{Le point d'augmentation}
+Le point\index{point} prolonge la note de la moitié de sa valeur. Il se place à droite de la note. 
+
+Exemples:
+\begin{description}
+\item \halfNoteDotted{} = \halfNote { } + \crotchet
+\item \crotchetDotted{} = \crotchet { } + \quaver
+\end{description}
+S'il y en a un deuxième, il vaut la moitié du premier point: \halfNoteDottedDouble{} = \halfNote { } + \crotchet { } + \quaver{} 
+
+On peut aussi ajouter un point aux silences, mais on préfère généralement écrire 2 silences séparés ( \crotchetRest{} \quaverRest{} ) plutôt qu'un silence pointé ( \crotchetRestDotted{} ).
+
+\section{La liaison rythmique}\index{liaison rythmique}
+Les valeurs de 2 notes identiques liées s'additionnent pour former une valeur unique. Dans ces 2 exemples, la note \emph{mi} a la même durée.
+\begin{flushleft}
+\includegraphics{exemples/liaisonrythmique}  \hspace{2 cm}\includegraphics{exemples/liaisonrythmique2} 
+\end{flushleft}
