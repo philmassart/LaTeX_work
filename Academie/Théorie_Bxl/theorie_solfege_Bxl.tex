@@ -3,7 +3,7 @@
 
 % The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
 
-%!TEX TS-program = XeLaTeX
+%!TEX TS-program = LuaLaTeX
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[11pt]{scrreprt}
@@ -23,8 +23,8 @@
 
 \usepackage[frenchb]{babel}
 
-\usepackage{fontspec,xltxtra,xunicode}
-%\usepackage{fontspec,xunicode,luatextra}
+%\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{fontspec,xunicode,luatextra}
 
 %\defaultfontfeatures{Mapping=tex-text}
 \defaultfontfeatures{Ligatures=TeX}
@@ -48,16 +48,9 @@
 %\usepackage{fetatolatex}
 \usepackage{fancyhdr}
 \usepackage{lilyglyphs}
-\newcommand{\coda}{\lilyGlyph[scale=1.4, raise=0.5]{scripts.coda}}
-\newcommand{\segno}{\lilyGlyph[scale=1.4, raise=0.5]{scripts.segno}}
-\newcommand*{\fermatalong}[1][]{%
-	\setkeys{lilyDesignOptions}{scale=1.2,raise=0.5}%
-	\lilyPrint[#1]{\hspace*{1ex}\lilyGetGlyph{scripts.ulongfermata}}%
-	}
-\newcommand*{\wholeNote}[1][]{%
-	\setkeys{lilyDesignOptions}{scale=1.3,raise=0.4}%
-	\lilyPrint[#1]{\hspace*{0.25ex}\lilyGetGlyph{noteheads.s0}}%
-	}
+\usepackage{lilyglyphsPrivate}
+
+
 
 
 \usepackage{microtype}

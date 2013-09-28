@@ -24,11 +24,11 @@ Voici les valeurs rythmiques les plus courantes:
 
 \begin{tikzpicture}
 [level distance=15mm,
-level 1/.style={sibling distance=90mm}, 
+level 1/.style={sibling distance=80mm}, 
 level 2/.style={sibling distance=40mm}, 
 level 3/.style={sibling distance=20mm},
 level 4/.style={sibling distance=12mm},
-level 5/.style={sibling distance=5mm}]
+level 5/.style={sibling distance=8mm}]
 
 \node {\wholeNote} child {node {\halfNote}
 child {node {\crotchet} child {node {\quaver} child {node {\semiquaver}} child {node {\semiquaver}} } child {node {\quaver} child {node {\semiquaver}} child {node {\semiquaver}} } 
@@ -56,7 +56,7 @@ La ronde vaut 4 noires ou 2 blanches. Elle sert également à calculer les chiff
 Une croche seule vaut la moitié d'une noire. Pour obtenir la même durée qu'une noire, il faut donc 2 croches. Comme leur nom l'indique, ces notes peuvent s'accrocher et s'écrire ainsi: \twoBeamedQuavers{}
 Mais, même accrochées, il s'agit toujours bien de 2 croches.
 \section[La double croche]{La double croche \semiquaver}\index{double croche}
-Une double croche seule vaut le quart d'une noire. Pour obtenir la même durée qu'une noire, il en faut donc 4. Il en faudra 2 pour obtenir la durée d'une croche. Comme les croches, ils peuvent s'accrocher. %Groupées par 4, elles s'écrivent ainsi: \Vier\SechBL\SechBL\SechBL
+Une double croche seule vaut le quart d'une noire. Pour obtenir la même durée qu'une noire, il en faut donc 4. Il en faudra 2 pour obtenir la durée d'une croche. Comme les croches, ils peuvent s'accrocher. Groupées par 4, elles s'écrivent ainsi: \beamedSixteenth %\Vier\SechBL\SechBL\SechBL
 
 \section{Les valeurs de silences}
 À chaque valeur de note correspond une valeur de silence:
