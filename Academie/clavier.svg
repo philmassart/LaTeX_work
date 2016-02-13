@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400.84466552734375"
+   height="101.13592529296875"
+   viewBox="99.46116638183594 99.28640747070312 500.3058319091797 200.42233276367188"
+   version="1.1"
+   id="svg3075"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="clavier.svg"
+   transform="scale(1.25,1.25)">
+  <metadata
+     id="metadata3125">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1682"
+     inkscape:window-height="818"
+     id="namedview3123"
+     showgrid="false"
+     inkscape:zoom="3.9865817"
+     inkscape:cx="178.8688"
+     inkscape:cy="30.56762"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3075" />
+  <title
+     id="title3077">/Users/philippe/Dropbox/Git/LaTeX_work/Academie/clavier.svg</title>
+  <defs
+     id="defs3079" />
+  <path
+     d="M 99.96116354727761 99.96116354727761 L 99.96116354727761 199.92232709455521 L 499.805817736388 199.92232709455521 L 499.805817736388 99.96116354727761 L 99.96116354727761 99.96116354727761 z"
+     stroke-miterlimit="10.0"
+     id="path3081"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill="none" />
+  <path
+     d="M 299.8834906418328 99.96116354727761 L 299.8834906418328 199.92232709455521 "
+     stroke-miterlimit="10.0"
+     id="path3083"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill="none" />
+  <path
+     d="M 199.92232709455521 99.96116354727761 L 199.92232709455521 199.92232709455521 "
+     stroke-miterlimit="10.0"
+     id="path3085"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill="none" />
+  <path
+     d="M 399.84465418911043 99.96116354727761 L 399.84465418911043 199.92232709455521 "
+     stroke-miterlimit="10.0"
+     id="path3087"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill="none" />
+  <path
+     d="M 250.25242342605162 99.96116354727761 L 250.25242342605162 199.92232709455521 "
+     stroke-miterlimit="10.0"
+     id="path3089"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill="none" />
+  <path
+     d="M 150.291259878774 99.96116354727761 L 150.291259878774 199.92232709455521 "
+     stroke-miterlimit="10.0"
+     id="path3091"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill="none" />
+  <path
+     d="M 350.21358697332926 99.96116354727761 L 350.21358697332926 199.92232709455521 "
+     stroke-miterlimit="10.0"
+     id="path3093"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill="none" />
+  <path
+     d="M 450.17475052060684 99.96116354727761 L 450.17475052060684 199.92232709455521 "
+     stroke-miterlimit="10.0"
+     id="path3095"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill="none" />
+  <path
+     d="M 139.80582314304561 99.7864062683488 L 139.80582314304561 150.1165025998452 L 159.9029102198584 150.1165025998452 L 159.9029102198584 99.7864062683488 L 139.80582314304561 99.7864062683488 z"
+     stroke-miterlimit="10.0"
+     id="path3097"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)" />
+  <path
+     d="M 189.9611621956132 99.7864062683488 L 189.9611621956132 150.1165025998452 L 210.40776383028364 150.1165025998452 L 210.40776383028364 99.7864062683488 L 189.9611621956132 99.7864062683488 z"
+     stroke-miterlimit="10.0"
+     id="path3099"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)" />
+  <path
+     d="M 290.44659757967725 100.31067810513522 L 290.44659757967725 149.7669880419876 L 310.01941281970363 149.7669880419876 L 310.01941281970363 100.31067810513522 L 290.44659757967725 100.31067810513522 z"
+     stroke-miterlimit="10.0"
+     id="path3101"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)" />
+  <path
+     d="M 340.25242207438725 99.96116354727761 L 340.25242207438725 150.291259878774 L 359.9999945933424 150.291259878774 L 359.9999945933424 99.96116354727761 L 340.25242207438725 99.96116354727761 z"
+     stroke-miterlimit="10.0"
+     id="path3103"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)" />
+  <path
+     d="M 390.0582465690972 99.96116354727761 L 390.0582465690972 149.9417453209164 L 409.80581908805243 149.9417453209164 L 409.80581908805243 99.96116354727761 L 390.0582465690972 99.96116354727761 z"
+     stroke-miterlimit="10.0"
+     id="path3105"
+     stroke-dasharray="none"
+     stroke-opacity="1.0"
+     marker-end="none"
+     marker-mid="none"
+     marker-start="none"
+     stroke-linejoin="miter"
+     stroke-linecap="square"
+     stroke-width="1.0"
+     stroke="rgb(0.0%,0.0%,0.0%)"
+     fill-rule="evenodd"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)" />
+  <text
+     x="0"
+     y="0"
+     font-weight="normal"
+     font-style="normal"
+     font-size="12"
+     id="text3107"
+     transform="matrix(1.0,0.0,0.0,1.0,115.33980409301263,190.13591947454205)"
+     font-family="Linux Biolinum O"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)">
+DO
+   </text>
+  <text
+     x="0"
+     y="0"
+     font-weight="normal"
+     font-style="normal"
+     font-size="12"
+     id="text3109"
+     style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O"
+     transform="translate(167.76699,189.7864)">
+    <tspan
+       sodipodi:role="line"
+       id="tspan3127"
+       x="0"
+       y="0">RÉ</tspan>
+  </text>
+  <text
+     x="0"
+     y="0"
+     font-weight="normal"
+     font-style="normal"
+     font-size="12"
+     id="text3111"
+     transform="matrix(1.0,0.0,0.0,1.0,217.39805498743587,190.135919474542)"
+     font-family="Linux Biolinum O"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)">
+MI
+   </text>
+  <text
+     x="0"
+     y="0"
+     font-weight="normal"
+     font-style="normal"
+     font-size="12"
+     id="text3113"
+     transform="matrix(1.0,0.0,0.0,1.0,267.7281513189323,190.13591947454202)"
+     font-family="Linux Biolinum O"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)">
+FA
+   </text>
+  <text
+     x="0"
+     y="0"
+     font-weight="normal"
+     font-style="normal"
+     font-size="12"
+     id="text3115"
+     transform="matrix(1.0,0.0,0.0,1.0,314.56310207185265,190.13591947454202)"
+     font-family="Linux Biolinum O"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)">
+SOL
+   </text>
+  <text
+     x="0"
+     y="0"
+     font-weight="normal"
+     font-style="normal"
+     font-size="12"
+     id="text3117"
+     transform="matrix(1.0,0.0,0.0,1.0,366.99028575049465,190.13591947454202)"
+     font-family="Linux Biolinum O"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)">
+LA
+   </text>
+  <text
+     x="0"
+     y="0"
+     font-weight="normal"
+     font-style="normal"
+     font-size="12"
+     id="text3119"
+     transform="matrix(1.0,0.0,0.0,1.0,465.5533910663418,190.13591947454202)"
+     font-family="Linux Biolinum O"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)">
+DO
+   </text>
+  <text
+     x="0"
+     y="0"
+     font-weight="normal"
+     font-style="normal"
+     font-size="12"
+     id="text3121"
+     transform="matrix(1.0,0.0,0.0,1.0,420.1359167712132,189.78640491668443)"
+     font-family="Linux Biolinum O"
+     fill-opacity="1.0"
+     fill="rgb(0.0%,0.0%,0.0%)">
+SI
+   </text>
+</svg>

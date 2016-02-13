@@ -1,0 +1,204 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = XeLaTeX
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, twocolumn]{scrreprt}
+
+\usepackage{flupstyleutfxelatex}
+
+%\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage[frenchb]{babel}
+
+\usepackage{fontspec,xltxtra,xunicode}
+%\usepackage{fontspec,xunicode,luatextra}
+
+%\defaultfontfeatures{Mapping=tex-text}
+\defaultfontfeatures{Ligatures=TeX}
+
+%\setromanfont[Mapping=tex-text]{Garaline Regular}
+%\setromanfont{Linux Libertine O}
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+%\defaultfontfeatures{Mapping=tex-text, Fractions=On} 
+%\defaultfontfeatures{Mapping=tex-text} 
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=02]{Linux Libertine O} 
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+\setromanfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+
+\usepackage{tikz}
+%\usepackage{fetatolatex}
+\usepackage{fancyhdr}
+\usepackage{lilyglyphs}
+\newcommand{\coda}{\lilyGlyph[scale=1.4, raise=0.5]{scripts.coda}}
+\newcommand{\segno}{\lilyGlyph[scale=1.4, raise=0.5]{scripts.segno}}
+
+\usepackage{bchart}
+
+\usepackage{microtype}
+\usepackage{multirow}
+%\usepackage[french=guillemets*]{csquotes}
+%\MakeOuterQuote{"}
+\frenchspacing
+\usepackage{hyperref}
+%\newcommand{\ieme}{\textsuperscript{ieme}}
+%\newcommand{\iere}{\textsuperscript{iere}}
+\setlength{\parindent}{0pt} %Supprime l'indentation en début de paragraphe
+\usepackage{makeidx}
+\makeindex
+\FrenchFootnotes
+%\usepackage{libertineotf}
+
+% taking care of orphans/widows 
+\widowpenalty=10000 
+\clubpenalty=10000 
+\raggedbottom
+\sloppy
+
+\title{Brief Article}
+\author{The Author}
+%\date{}                                           % Activate to display a given date or no date
+
+\usepackage{soul}
+\sethlcolor{black}
+\usepackage{color}
+\usepackage{titlesec}
+
+
+\titleformat{\section}
+    {\titlefont\color{white}}
+    {\hl{\thesection{\kern.66em}}}
+    {0pt}
+{\hl}
+
+\usepackage{criticalreport}
+
+\begin{document}
+
+
+%\thispagestyle{empty}
+%\pagenumbering{roman}
+%\begin{center}
+%\begin{LARGE}
+%Académie de Woluwe-Saint-Pierre
+%\end{LARGE}
+%\end{center}
+%
+%\begin{center}
+%\begin{LARGE}
+%\textbf{Cours de formation musicale}
+%\end{LARGE}
+%\end{center}
+%
+%\begin{center}
+%\vspace{5cm}
+%\noindent\rule{\textwidth}{0.5mm}
+%\begin{huge}
+%\textbf{Aide-mémoire de notation musicale \\
+%%\vspace{2 cm}
+% %Qualification [Adultes] 2
+% }
+%\end{huge}
+%\noindent\rule{\textwidth}{0.5mm}
+%\end{center}
+
+%------------------------------------INTRODUCTION--------------------
+%------------------------------------------------------------------------------
+%\clearpage
+%\thispagestyle{empty}
+%\pagenumbering{roman}
+%\addcontentsline{toc}{chapter}{\numberline{}Remerciements}
+%\chapter*{Remerciements}
+%\begin{vcenterpage}
+
+
+%\paragraph{À l'attention des parents}
+%\paragraph{}
+%Ce petit aide-mémoire reprend les différents notions de théorie correspondantes à chaque degré de formation musicale à l'académie. Chaque professeur expliquera ces notions à sa manière devant les élèves, mais les pages qui suivent permettent de retrouver rapidement les différents chapitres vus pendant l'année, de façon résumée mais néanmoins précise.
+
+
+%\end{vcenterpage}
+%--------------------------TDM ETC------------ ------------------------
+%------------------------------------------------------------------------------
+\newpage
+\pagenumbering{roman}
+%\selectlanguage{french}
+\lhead{Aide-mémoire de notation musicale}
+%\rhead{Qualification Adultes 2}
+\fancyfoot[CO]{\thepage}%ajouter CE si a marche pas
+\tableofcontents
+%\sommaire
+%\listoffigures
+\cleardoublepage
+%--------------------------CHAPITRE 1------------ ----------------
+%------------------------------------------------------------------------------
+%\chapter{Clés, intervalles}
+\clearpage
+\pagenumbering{arabic}
+\lhead{Aide-mémoire de notation musicale}
+%\rhead{Qualification Adultes 2}
+\fancyfoot[CO]{\thepage}%ajouter CE si ça marche pas
+
+%\chapter{Clés, intervalles}
+%\section{Les clés}
+%Il existe 3 types de clés différents: 
+%\begin{description}
+%\item [clé de sol:] (2\ieme{} ligne)
+%\item [clés de fa:] (4\ieme{} ou 3\ieme{} ligne)
+%\item  [clés d'ut:] (1\iere, 2\ieme, 3\ieme{} ou 4\ieme{} ligne)
+%\end{description}
+%\begin{center}
+%\includegraphics{./exemples/ex_cles.pdf}
+%\end{center}
+
+\section*{A cappella}
+Passage de musique vocale qu'il faut exécuter \textbf{sans accompagnement} (a cappella). Une partie d'accompagnement est parfois prévue pour les répétitions; cette partie sera alors écrite en plus petites notes.
+
+\input{annotate.annotations.inp}
+
+\section*{A due (a2)} Voir \emph{Partage de portée}
+
+\section*{A tempo}
+Indication en haut de la portée pour indiquer un retour au tempo précédent; souvent utilisé après des changements tels que \emph{ritardando}, \emph{accelerando}, \emph{più lento} etc. {Voir Indications de tempo}
+
+\section*{Accents} Voir articulations
+
+\section*{Altérations}
+Altérations temporaires de la hauteur d'une note
+
+\subsection*{Les cinq symboles principaux}
+S'ils apparaissent dans une partition -- à l'exception de l'armure --, ces symboles sont appelés \emph{altérations}.
+\begin{enumerate}
+\item[\sharp] Dièse: monte la note d'un demi-ton
+\item[\doublesharp] Double dièse: monte la note de deux demi-tons
+\item[\flat] Bémol: abaisse la note d'un demi-ton
+\item[\flatflat] Double bémol: abaisse la note de deux demi-tons
+\item[\natural] Bécarre: annule une des altérations ci-dessus, qu'elle soit écrite à l'armure ou en cours de partition
+\end{enumerate}
+
+
+%\addcontentsline{toc}{chapter}{\numberline{}Index}
+%\printindex
+\end{document}
+
+
+
+\end{document}  
